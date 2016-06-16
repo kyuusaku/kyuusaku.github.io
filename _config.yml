@@ -1,0 +1,12 @@
+# Site settings
+title: Suo Qiu's pages
+email:
+description: Personal Site
+baseurl:
+url:
+twitter_username:
+github_username:  kyuusaku
+
+# Build settings
+markdown: kramdown
+permalink: pretty
