@@ -4,9 +4,11 @@ title: Research map about convolutional neural networks
 permalink: /cnn_map/
 ---
 
+------
+
 ## Popular networks
 
-------
+
 
 > **2015**
 
@@ -32,16 +34,21 @@ Motivation: Enhancing the local linear model (convolution filter) by multilayer 
 
 * **AlexNet**
 
+
+------
+
 ## Visualization
 
 
+
+------
 
 ## Optimization
 
 
 
 
-
+------
 
 ## Activation function
 
