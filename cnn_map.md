@@ -22,7 +22,7 @@ permalink: /cnn_map/
 [paper](http://arxiv.org/abs/1409.4842)
 [architecture](http://ethereon.github.io/netscope/#/preset/googlenet)  
 Key: Inception module. No. of layers: 22.
-
+  
 
 * **NIN**:Network In Network 
 [paper](http://arxiv.org/abs/1312.4400)  
