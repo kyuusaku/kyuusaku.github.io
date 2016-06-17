@@ -12,9 +12,9 @@ permalink: /cnn_map/
 
 ## Activation function
 **2016**
----------------------------
+------
 
 **2015**
----------------------------
+------
 * [Learning Activation Functions to Improve Deep Neural Networks](http://arxiv.org/abs/1412.6830)
 aaa
