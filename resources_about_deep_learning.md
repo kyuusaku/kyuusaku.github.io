@@ -15,5 +15,4 @@ permalink: /resources_about_deep_learning/
 
 ## Websites
 * [Deep Learning](http://deeplearning.net/)
-
 *stop updating*
