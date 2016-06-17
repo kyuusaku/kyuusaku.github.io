@@ -13,6 +13,12 @@ I am currently a PHD candidate with School of Electronic and Information Enginee
 
 
 ### Userful links
-
+* [Resources about deep learning](/resources_about_deep_learning/)
+* [Popular groups & people](/popular_groups_people/)
+* [Datasets]()
+* [Conference & Journals]()
 
 ### Knowledge maps
+* [CNN Cookbooks]()
+* [CNN research map](/cnn_map/)
+* [Object Detection](/object_detection/)
