@@ -14,14 +14,16 @@ permalink: /cnn_map/
 
 > **2014**
 
-* **Network In Network** 
-[paper](http://arxiv.org/abs/1312.4400)
-
-
 * **GoogLeNet v1**(Inception) 
 [paper](http://arxiv.org/abs/1409.4842)
 [architecture](http://ethereon.github.io/netscope/#/preset/googlenet)  
-Key . No. of layers: 22.
+Key: Inception module. No. of layers: 22.
+
+* **NIN**:Network In Network 
+[paper](http://arxiv.org/abs/1312.4400)
+Motivation: Enhancing the local linear model (convolution filter) by multilayer perceptron. They argue that conventional CNN implicitly makes the assumption that the latent concepts are linearly separable.
+
+
 
 > **2012**
 
