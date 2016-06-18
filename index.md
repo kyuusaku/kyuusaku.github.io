@@ -22,4 +22,5 @@ I am currently a PHD candidate with School of Electronic and Information Enginee
 * [CNN Cookbooks]()
 * [CNN research map](/cnn_map/)
 * [Object Detection](/object_detection/)
+* [Weakly supervised learning]()
 * [Applications]()
