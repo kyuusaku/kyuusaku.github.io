@@ -11,7 +11,7 @@ The **softmax function** is given by
 $$\sigma (\mathbf{z})_{i}={\frac {e^{z_{i}}}{\sum _{k=1}^{K}e^{z_{k}}}}$$
 for \\(i=1,\dots,K.\\)  
 
-The derivative \\( \frac{\partial \sigma(\mathbf{z})_{i}}{\partial \mathbf{z}_{j}} \\) of the softmax function
+The derivative $$\frac{\partial \sigma(\mathbf{z})_{i}}{\partial \mathbf{z}_{j}}$$ of the softmax function
 $$i=j:$$
 
 
