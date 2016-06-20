@@ -18,7 +18,7 @@ $$
 =
 \left(\frac {e^{z_{j}}}{\sum _{k=1}^{K}e^{z_{k}}}\right)^{\prime}\left(e^{z_{j}}\right)^{\prime}
 =
-\frac { {\sum_{k=1}^{K}e^{z_{k}}} \left(e^{z_{j}}\right)^{\prime} - \left( \sum_{k=1}^{K}e^{z_{k}} \right)^{\prime} e^{z_{j}} } { {\sum_{k=1}^{K}e^{z_{k}}}^2 } e^{z_{j}}
+\frac { \left(\sum_{k=1}^{K}e^{z_{k}}\right) \left(e^{z_{j}}\right)^{\prime} - \left( \sum_{k=1}^{K}e^{z_{k}} \right)^{\prime} e^{z_{j}} } { \left(\sum_{k=1}^{K}e^{z_{k}}\right)^2 } e^{z_{j}}
 $$
 
 
