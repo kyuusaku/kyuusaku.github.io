@@ -17,6 +17,7 @@ I am currently a PHD candidate with School of Electronic and Information Enginee
 * [Popular groups & people](/popular_groups_people/)
 * [Datasets]()
 * [Conference & Journals]()
+* [Tools](/tools/)
 
 ### Knowledge maps
 * [CNN Cookbooks](/cnn_cookbooks/)
