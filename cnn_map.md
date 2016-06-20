@@ -15,8 +15,15 @@ permalink: /cnn_map/
 * **ResNet** 
 [paper](http://arxiv.org/abs/1512.03385) 
 [project & caffe code](https://github.com/KaimingHe/deep-residual-networks)
+[architecture ResNet-50](http://ethereon.github.io/netscope/#/gist/db945b393d40bfa26006)
+[architecture ResNet-101](http://ethereon.github.io/netscope/#/gist/b21e2aae116dc1ac7b50)
+[architecture ResNet-152](http://ethereon.github.io/netscope/#/gist/d38f3e6091952b45198b)
 
 > **2014**
+
+* **VGG16**
+[paper]()
+[architecture](http://ethereon.github.io/netscope/#/preset/vgg-16)
 
 * **GoogLeNet v1**(Inception) 
 [paper](http://arxiv.org/abs/1409.4842)
