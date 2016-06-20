@@ -19,7 +19,7 @@ I am currently a PHD candidate with School of Electronic and Information Enginee
 * [Conference & Journals]()
 
 ### Knowledge maps
-* [CNN Cookbooks]()
+* [CNN Cookbooks](/cnn_cookbooks/)
 * [CNN research map](/cnn_map/)
 * [Object Detection](/object_detection/)
 * [Segmentation]()

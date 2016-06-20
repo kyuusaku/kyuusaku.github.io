@@ -25,7 +25,7 @@ A simple yet effective online hard example mining algorithm for training any Fas
 
 * Object Detection Networks on Convolutional Feature Maps
 [paper](http://arxiv.org/abs/1504.06066)  
-This paper demonstrates that carefully designing deep networks for object classifi-cation is just as important.
+This paper demonstrates that carefully designing deep networks for object classification is just as important. About 2% improvement. (proposed method: refer Figure 1)
 
 * **Faster R-CNN**
 [matlab code](https://github.com/ShaoqingRen/faster_rcnn)

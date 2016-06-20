@@ -14,5 +14,11 @@ permalink: /popular_groups_people/
 ### People
 
 
-
+* [Kaiming He](http://kaiminghe.com/)
 * [Ross B. Girshick](http://people.eecs.berkeley.edu/~rbg/)
+
+------
+
+### Nice blogs
+
+* [Peter's notes](http://peterroelants.github.io/)
