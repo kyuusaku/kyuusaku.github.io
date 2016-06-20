@@ -4,10 +4,10 @@ title: Softmax
 permalink: /softmax/
 ---
 
-\sigma (\mathbf{z})_{j}={\frac {e^{z_{j}}}{\sum _{k=1}^{K}e^{z_{k}}}}
+$$\sigma (\mathbf{z})_{j}={\frac {e^{z_{j}}}{\sum _{k=1}^{K}e^{z_{k}}}}$$
 
 
-#### 
+
 
 
 
