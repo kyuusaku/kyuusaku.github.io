@@ -133,7 +133,7 @@ The **sumone function** is given by
 $$\sigma (\mathbf{z})_{i}={\frac {z_{i}}{\sum_{k=1}^{K}z_{k}}}$$
 for $$i=1,\dots,K.$$  
 
-The derivative $$\frac{\partial \sigma(\mathbf{z})_{i}}{\partial \mathbf{z}_{j}}$$ of the softmax function  
+The derivative $$\frac{\partial \sigma(\mathbf{z})_{i}}{\partial \mathbf{z}_{j}}$$ of the sumone function  
 
 if $$i=j:$$  
 $$
@@ -141,9 +141,9 @@ $$
 =
 \left(\frac {z_{j}}{\sum_{k=1}^{K}z_{k}}\right)^{\prime}
 =
-\frac { \left(\sum_{k=1}^{K}e^{z_{k}}\right) \left(e^{z_{j}}\right)^{\prime} - \left( \sum_{k=1}^{K}e^{z_{k}} \right)^{\prime} e^{z_{j}} } { \left(\sum_{k=1}^{K}e^{z_{k}}\right)^2 } 
+\frac { \left(\sum_{k=1}^{K}z_{k}\right) \left(z_{j}\right)^{\prime} - \left( \sum_{k=1}^{K}z_{k} \right)^{\prime} z_{j} } { \left(\sum_{k=1}^{K}z_{k}\right)^2 } 
 =
-\frac { \left(\sum_{k=1}^{K}e^{z_{k}}\right) \left(e^{z_{j}}\right) - e^{z_{j}}e^{z_{j}} } { \left(\sum_{k=1}^{K}e^{z_{k}}\right)^2 }
+\frac { \left(\sum_{k=1}^{K}z_{k}\right) \left(z_{j}\right) - z_{j}z_{j} } { \left(\sum_{k=1}^{K}z_{k}\right)^2 }
 =
 \sigma(\mathbf{z})_{j} (1 - \sigma(\mathbf{z})_{j})
 $$  
