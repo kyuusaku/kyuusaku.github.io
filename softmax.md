@@ -41,7 +41,7 @@ $$
 ### Implementation in Caffe (Details)
 
 **Forward**  
-In this code, $$dim=channels*{inner_num_}$$. (*I am not clear why subtract the max? Avoiding large values?*) If *bottom_data* is a $$N*C*H*W$$ matrix and $$softmax_axis_=2$$, *top_data* is a $$N*C*H*W$$ matrix, *scale_data* is a $$N*C*1*W$$ matrix, *sum_multiplier_* is a $$H*1$$ identity vector.  
+In this code, $$dim=channels*inner\_num$$. (*I am not clear why subtract the max? Avoiding large values?*) If *bottom_data* is a $$N*C*H*W$$ matrix and $$softmax_axis_=2$$, *top_data* is a $$N*C*H*W$$ matrix, *scale_data* is a $$N*C*1*W$$ matrix, *sum_multiplier_* is a $$H*1$$ identity vector.  
 * caffe_cpu_gemm<Dtype>(CblasNoTrans, CblasNoTrans, channels, inner_num_, 1, -1., sum_multiplier_.cpu_data(), scale_data, 1., top_data);  
 $$
 top_data = (-1.)*{sum_multiplier_}*scale_data  + 1.*top_data
