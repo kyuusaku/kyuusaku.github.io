@@ -143,7 +143,7 @@ $$
 =
 \frac { \left(\sum_{k=1}^{K}z_{k}\right) \left(z_{j}\right)^{\prime} - \left( \sum_{k=1}^{K}z_{k} \right)^{\prime} z_{j} } { \left(\sum_{k=1}^{K}z_{k}\right)^2 } 
 =
-\frac { \left(\sum_{k=1}^{K}z_{k}\right) \left(z_{j}\right) - z_{j}z_{j} } { \left(\sum_{k=1}^{K}z_{k}\right)^2 }
+\frac { \left(\sum_{k=1}^{K}z_{k}\right) - z_{j} } { \left(\sum_{k=1}^{K}z_{k}\right)^2 }
 =
 \sigma(\mathbf{z})_{j} (1 - \sigma(\mathbf{z})_{j})
 $$  
@@ -152,11 +152,11 @@ if $$i \neq j:$$
 $$
 \frac{\partial \sigma(\mathbf{z})_{i}}{\partial \mathbf{z}_{j}}
 =
-\left(\frac {e^{z_{i}}}{\sum _{k=1}^{K}e^{z_{k}}}\right)^{\prime}
+\left(\frac {z_{i}}{\sum _{k=1}^{K}z_{k}}\right)^{\prime}
 =
-\frac { \left(\sum_{k=1}^{K}e^{z_{k}}\right) \left(e^{z_{i}}\right)^{\prime} - \left( \sum_{k=1}^{K}e^{z_{k}} \right)^{\prime} e^{z_{i}} } { \left(\sum_{k=1}^{K}e^{z_{k}}\right)^2 } 
+\frac { \left(\sum_{k=1}^{K}z_{k}\right) \left(z_{i}\right)^{\prime} - \left( \sum_{k=1}^{K}z_{k} \right)^{\prime} z_{i} } { \left(\sum_{k=1}^{K}z_{k}\right)^2 } 
 =
-\frac { 0 - e^{z_{j}}e^{z_{i}} } { \left(\sum_{k=1}^{K}e^{z_{k}}\right)^2 }
+\frac { 0 - z_{i} } { \left(\sum_{k=1}^{K}z_{k}\right)^2 }
 =
 - \sigma(\mathbf{z})_{j} \sigma(\mathbf{z})_{i}
 =
