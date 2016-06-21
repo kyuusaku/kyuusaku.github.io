@@ -21,7 +21,9 @@ $$
 =
 \frac { \left(\sum_{k=1}^{K}e^{z_{k}}\right) \left(e^{z_{j}}\right)^{\prime} - \left( \sum_{k=1}^{K}e^{z_{k}} \right)^{\prime} e^{z_{j}} } { \left(\sum_{k=1}^{K}e^{z_{k}}\right)^2 } 
 =
-\frac { \left(\sum_{k=1}^{K}e^{z_{k}}\right) \left(e^{z_{j}}\right) - e^{z_{j}}e^{z_{j}} } { \left(\sum_{k=1}^{K}e^{z_{k}}\right)^2 } 
+\frac { \left(\sum_{k=1}^{K}e^{z_{k}}\right) \left(e^{z_{j}}\right) - e^{z_{j}}e^{z_{j}} } { \left(\sum_{k=1}^{K}e^{z_{k}}\right)^2 }
+=
+\sigma(\mathbf{z})_{j} (1 - \sigma(\mathbf{z})_{j})
 $$  
 
 if $$i \neq j:$$  
@@ -32,7 +34,11 @@ $$
 =
 \frac { \left(\sum_{k=1}^{K}e^{z_{k}}\right) \left(e^{z_{i}}\right)^{\prime} - \left( \sum_{k=1}^{K}e^{z_{k}} \right)^{\prime} e^{z_{i}} } { \left(\sum_{k=1}^{K}e^{z_{k}}\right)^2 } 
 =
-\frac { 0 - e^{z_{j}}e^{z_{i}} } { \left(\sum_{k=1}^{K}e^{z_{k}}\right)^2 } 
+\frac { 0 - e^{z_{j}}e^{z_{i}} } { \left(\sum_{k=1}^{K}e^{z_{k}}\right)^2 }
+=
+- \sigma(\mathbf{z})_{j} \sigma(\mathbf{z})_{i}
+=
+\sigma(\mathbf{z})_{j} (0 - \sigma(\mathbf{z})_{j})
 $$
 
 
@@ -83,6 +89,32 @@ $$
       top_data += inner_num_;
     }
   }
+
+```
+
+
+**Backward**  
+
+
+
+```c++
+
+  int channels = top[0]->shape(softmax_axis_);
+  int dim = top[0]->count() / outer_num_;
+  caffe_copy(top[0]->count(), top_diff, bottom_diff);
+  for (int i = 0; i < outer_num_; ++i) {
+    // compute dot(top_diff, top_data) and subtract them from the bottom diff
+    for (int k = 0; k < inner_num_; ++k) {
+      scale_data[k] = caffe_cpu_strided_dot<Dtype>(channels,
+          bottom_diff + i * dim + k, inner_num_,
+          top_data + i * dim + k, inner_num_);
+    }
+    // subtraction
+    caffe_cpu_gemm<Dtype>(CblasNoTrans, CblasNoTrans, channels, inner_num_, 1,
+        -1., sum_multiplier_.cpu_data(), scale_data, 1., bottom_diff + i * dim);
+  }
+  // elementwise multiplication
+  caffe_mul(top[0]->count(), bottom_diff, top_data, bottom_diff);
 
 ```
 
