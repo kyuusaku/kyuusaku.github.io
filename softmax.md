@@ -38,7 +38,7 @@ $$
 =
 - \sigma(\mathbf{z})_{j} \sigma(\mathbf{z})_{i}
 =
-\sigma(\mathbf{z})_{j} (0 - \sigma(\mathbf{z})_{j})
+\sigma(\mathbf{z})_{j} (0 - \sigma(\mathbf{z})_{i})
 $$
 
 
@@ -145,7 +145,7 @@ $$
 =
 \frac { \left(\sum_{k=1}^{K}z_{k}\right) - z_{j} } { \left(\sum_{k=1}^{K}z_{k}\right)^2 }
 =
-\sigma(\mathbf{z})_{j} (1 - \sigma(\mathbf{z})_{j})
+\left(\sum_{k=1}^{K}z_{k}\right) (1 - \sigma(\mathbf{z})_{j})
 $$  
 
 if $$i \neq j:$$  
@@ -158,7 +158,5 @@ $$
 =
 \frac { 0 - z_{i} } { \left(\sum_{k=1}^{K}z_{k}\right)^2 }
 =
-- \sigma(\mathbf{z})_{j} \sigma(\mathbf{z})_{i}
-=
-\sigma(\mathbf{z})_{j} (0 - \sigma(\mathbf{z})_{j})
+\left(\sum_{k=1}^{K}z_{k}\right) (0 - \sigma(\mathbf{z})_{j})
 $$
