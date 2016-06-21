@@ -158,5 +158,7 @@ $$
 =
 \frac { 0 - z_{i} } { \left(\sum_{k=1}^{K}z_{k}\right)^2 }
 =
-\frac {1}{\sum_{k=1}^{K}z_{k}} (0 - \sigma(\mathbf{z})_{j})
+\frac {1}{\sum_{k=1}^{K}z_{k}} (0 - \sigma(\mathbf{z})_{i})
 $$
+
+Note: before summation of the bottom diff, remember multiply the corresponding top diff.
