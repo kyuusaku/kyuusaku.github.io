@@ -61,7 +61,11 @@ The other is re-compute the derivative with the concrete function of $$o$$. The 
 
 For example, if $$ o_i = \frac {e^{z_i}} {\sum_{k=1}^{K}e^{z_{k}}} $$, (refer [softmax function](/softmax/)), the derivative of the softmax with cross entropy loss is  
 $$
-
+\frac {\partial \ell} {\partial z_{j}}
+=
+\frac {\partial \ell} {\partial o_i} \frac {\partial o_i} {\partial z_{j}}
+=
+- \frac {y_i} {o_i} \left( o_j \left( \delta_{ij} - 0_i \right) \right)
 $$
 
 
