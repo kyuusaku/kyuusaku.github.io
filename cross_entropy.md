@@ -29,6 +29,14 @@ When comparing a distribution $$q$$ against a fixed reference distribution $$p$$
 Thus, for learning and optimization, we expect the output distribution $$o$$ match the label distribution $$y$$, we can minimize the following loss function:  
 $$ \ell (y,o) = -\sum_{i} y_i \log \left( o_i \right) $$
 
+The derivative $$\ell (y,o)$$ with respect to $$o_i$$ is  
+$$ 
+\frac {\partial \ell} {\partial o_i} 
+= 
+\left( -\sum_{i} y_i \log \left( o_i \right) \right)^{\prime} 
+=
+- \frac {y_i} {o_i}
+$$
 
 
 ### Softmax With Loss
