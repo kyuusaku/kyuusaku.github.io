@@ -40,7 +40,7 @@ $$
 
 Note that the denominator of the derivative is the output $$o_i$$, which may cause the overflow problem when $$o_i$$ approaches $$0$$. Two tricks can be used to solve this problem. One is setting a numerical lower bound.  
 
-** sample code in Caffe **
+**sample code in Caffe**
 
 ```c++
 
