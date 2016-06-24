@@ -38,7 +38,29 @@ $$
 - \frac {y_i} {o_i}
 $$  
 
-Note that the denominator of the derivative is the output $$o$$, which may cause the overflow problem when $$o$$ approaches $$0$$. 
+Note that the denominator of the derivative is the output $$o_i$$, which may cause the overflow problem when $$o_i$$ approaches $$0$$. Two tricks can be used to solve this problem. One is setting a numerical lower bound.  
+
+** sample code in Caffe **
+
+```c++
+
+    int num = bottom[0]->num();
+    int dim = bottom[0]->count() / bottom[0]->num();
+    caffe_set(bottom[0]->count(), Dtype(0), bottom_diff);
+    const Dtype scale = - top[0]->cpu_diff()[0] / num;
+    for (int i = 0; i < num; ++i) {
+      int label = static_cast<int>(bottom_label[i]);
+      Dtype prob = std::max(
+          bottom_data[i * dim + label], Dtype(kLOG_THRESHOLD));
+      bottom_diff[i * dim + label] = scale / prob;
+    }
+
+```
+
+The other is re-compute the derivative with the concrete function of $$o$$. The latter is better and commonly used.  
+
+For example, if $$ o_i = \frac {e^{z_i}} {\sum_{k=1}^{K}e^{z_{k}}} $$, 
+
 
 ### Softmax With Loss
 
