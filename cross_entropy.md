@@ -9,7 +9,7 @@ permalink: /cross_entropy/
 Given the *"true"* distribution $$p$$, the **cross entropy** between two probability distributions $$p$$ and $$q$$ over the same underlying set of events are able to measure how the *"observed"* probability distribution $$q$$ match the *"true"* distribution $$p$$.  
 
 The cross entropy for the distributions $$p$$ and $$q$$ over a given set is defined as follows:  
-$$ H(p,q)=\operatorname {E}_{p}[-\log q]=H(p)+D_{{{\mathrm  {KL}}}}(p\|q)$$  
+$$ H(p,q)=E_{p}[-\log q]=H(p)+D_{{{\mathrm{KL}}}}(p\|q)$$  
 where $$H(p)$$ is the entropy of $$p$$, and $$D_{\mathrm {KL} }(p||q)} D_{{{\mathrm  {KL}}}}(p||q)$$ is the Kullback–Leibler divergence of $$q$$ from $$p$$ (also known as the relative entropy of $$p$$ with respect to $$q$$ — note the reversal of emphasis).
 
 For discrete $$p$$ and $$q$$ this means
