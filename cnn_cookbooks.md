@@ -7,3 +7,4 @@ permalink: /cnn_cookbooks/
 ------
 
 * [softmax](/softmax/)
+* [cross entropy loss]()
