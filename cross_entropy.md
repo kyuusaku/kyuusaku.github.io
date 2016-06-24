@@ -78,10 +78,14 @@ $$
      1 & \quad \text{if } i = j \\
      0 & \quad \text{if } i \neq j \\
    \end{cases}
-$$
+$$  
+
+*It is apparent that the label $$y_i$$ controls the importance of the loss.*
+
 
 ### Softmax With Loss
 
+*Softmax with loss* is a special case of the forementioned *general cross entropy loss* with $$y_i=1$$ for $$i$$th class. 
 
 
 ### Sigmoid Cross Entropy Loss
