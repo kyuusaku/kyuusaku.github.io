@@ -18,6 +18,23 @@ $$H(p,q)=-\sum_{x}p(x) \log q(x)$$
 The situation for continuous distributions is analogous:
 $$-\int_{X}p(x)\log q(x) \mathrm{d}x$$
 
+------
+
+Notes of the implementation in CNN.
+
+### General Cross Entropy Loss
+
+When comparing a distribution $$q$$ against a fixed reference distribution $$p$$, cross entropy and KL divergence are identical up to an additive constant (since $$p$$ is fixed): both take on their minimal values when $$p=q$$, which is $$0$$ for KL divergence, and $$H(p)$$ for cross entropy.  
+
+Thus, for learning and optimization, we expect the output distribution $$o$$ match the label distribution $$y$$, we can minimize the following loss function:  
+$$ \ell (y,o) = -\sum_{i} y_i \log o_i $$
+
+
+### Softmax With Loss
+
+
+
+### Sigmoid Cross Entropy Loss
 
 
 #### Reference:
