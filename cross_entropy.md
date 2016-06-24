@@ -73,12 +73,11 @@ y_i \left( o_j - \delta_{ij} \right)
 $$, 
 where 
 $$
-\[ \delta_{ij} = 
+ \delta_{ij} = 
    \begin{cases}
      1 & \quad \text{if } i = j
      0 & \quad \text{if } i \neq j
    \end{cases}
-\]
 $$
 
 ### Softmax With Loss
