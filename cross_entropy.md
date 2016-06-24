@@ -12,10 +12,10 @@ The cross entropy for the distributions $$p$$ and $$q$$ over a given set is defi
 $$H(p,q)=E_{p}[-\log q]=H(p)+D_{\mathrm{KL}}(p \parallel q)$$  
 where $$H(p)$$ is the entropy of $$p$$, and $$D_{\mathrm{KL}}(p \parallel q)$$ is the Kullback–Leibler divergence of $$q$$ from $$p$$ (also known as the relative entropy of $$p$$ with respect to $$q$$ — note the reversal of emphasis).  
 
-For discrete $$p$$ and $$q$$ this means
+For discrete $$p$$ and $$q$$ this means 
 $$H(p,q)=-\sum_{x}p(x) \log q(x)$$  
 
-The situation for continuous distributions is analogous:  
+The situation for continuous distributions is analogous:
 $$-\int_{X}p(x)\log q(x) \mathrm{d}x$$
 
 
