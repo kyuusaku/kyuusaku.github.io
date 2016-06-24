@@ -65,7 +65,9 @@ $$
 =
 \frac {\partial \ell} {\partial o_i} \frac {\partial o_i} {\partial z_{j}}
 =
-- \frac {y_i} {o_i} \left( o_j \left( \delta_{ij} - 0_i \right) \right)
+- \frac {y_i} {o_i} \left( o_j \left( \delta_{ij} - o_i \right) \right)
+=
+- \frac {y_i o_j \delta_{ij}} {o_i} + y_i o_j
 $$
 
 
