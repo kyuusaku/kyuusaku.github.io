@@ -68,6 +68,8 @@ $$
 - \frac {y_i} {o_i} \left( o_j \left( \delta_{ij} - o_i \right) \right)
 =
 - \frac {y_i o_j \delta_{ij}} {o_i} + y_i o_j
+=
+y_i \left( o_j - \delta_{ij} \right)
 $$
 
 
