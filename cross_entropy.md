@@ -70,13 +70,13 @@ $$
 - \frac {y_i o_j \delta_{ij}} {o_i} + y_i o_j
 =
 y_i \left( o_j - \delta_{ij} \right)
-$$, 
-where 
+$$  
+where  
 $$
  \delta_{ij} = 
    \begin{cases}
-     1 & \quad \text{if } i = j
-     0 & \quad \text{if } i \neq j
+     1 & \quad \text{if } i = j \\
+     0 & \quad \text{if } i \neq j \\
    \end{cases}
 $$
 
