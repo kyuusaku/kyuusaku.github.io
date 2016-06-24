@@ -59,7 +59,10 @@ Note that the denominator of the derivative is the output $$o_i$$, which may cau
 
 The other is re-compute the derivative with the concrete function of $$o$$. The latter is better and commonly used.  
 
-For example, if $$ o_i = \frac {e^{z_i}} {\sum_{k=1}^{K}e^{z_{k}}} $$, 
+For example, if $$ o_i = \frac {e^{z_i}} {\sum_{k=1}^{K}e^{z_{k}}} $$, (refer [softmax function](/softmax/)), the derivative of the softmax with cross entropy loss is  
+$$
+
+$$
 
 
 ### Softmax With Loss
