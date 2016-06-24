@@ -36,8 +36,9 @@ $$
 \left( -\sum_{i} y_i \log \left( o_i \right) \right)^{\prime} 
 =
 - \frac {y_i} {o_i}
-$$
+$$  
 
+Note that the denominator of the derivative is the output $$o$$, which may cause the overflow problem when $$o$$ approaches $$0$$. 
 
 ### Softmax With Loss
 
