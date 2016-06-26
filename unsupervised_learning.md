@@ -11,9 +11,10 @@ permalink: /unsupervised_learning/
 * Unsupervised Learning of **Visual Representations** using Videos
 [project](http://www.cs.cmu.edu/~xiaolonw/unsupervise.html)  
 They try to answer the following questions:  
-	{+ is strong-supervision necessary for training these CNNs?
-	+ Do we really need millions of semantically-labeled images to learn a good representation?  }
-*It seems humans can learn visual representations using little or no semantic supervision.*
+	+ is strong-supervision necessary for training these CNNs?
+	+ Do we really need millions of semantically-labeled images to learn a good representation?  
+
+    *It seems humans can learn visual representations using little or no semantic supervision.*
 They argue that static images themselves might not have enough information to learn a good visual representation.  
 *In fact, humans also learn their visual representations not from mil-lions of static images but years of dynamic sensory inputs.*  
 
