@@ -6,10 +6,10 @@ permalink: /tools/
 
 ------
 
-#### Wiki
+#### Documents
 
 * [LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
-
+* [Markdown](https://daringfireball.net/projects/markdown/syntax#p)
 
 #### Question
 
