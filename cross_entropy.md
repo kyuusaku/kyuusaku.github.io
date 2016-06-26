@@ -93,3 +93,4 @@ $$
 
 #### Reference:
 * [Wiki](https://en.wikipedia.org/wiki/Cross_entropy)
+* [Softmax vs. Softmax-Loss: Numerical Stability](http://freemind.pluskid.org/machine-learning/softmax-vs-softmax-loss-numerical-stability/)

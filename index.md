@@ -25,4 +25,5 @@ I am currently a PHD candidate with School of Electronic and Information Enginee
 * [Object Detection](/object_detection/)
 * [Segmentation](/segmentation/)
 * [Weakly supervised learning](/weakly_supervised_learning/)
+* [Unsupervised learning](/unsupervised_learning/)
 * [Applications]()
