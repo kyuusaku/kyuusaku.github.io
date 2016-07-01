@@ -40,7 +40,7 @@ permalink: /server/
     ```
 6. Configure the network.  
 
-	<code>
+	```
     	sudo vi /etc/network/interfaces
 
 		auto eth0
@@ -53,7 +53,7 @@ permalink: /server/
 
     	sudo vi /etc/resolv.conf
     	nameserver 202.112.125.53 8.8.8.8
-    </code>
+    ```
 
 
     then reboot
