@@ -34,11 +34,11 @@ permalink: /server/
     > error: grub rescue
     > grub was not installed correctly, check the process of the installation.
 4. Check the `/home` directory.
-5. Check the `vim` version. May need to update the vim version.
+5. Check the `vim` version. May need to update the vim version.  
     ```
     sudo apt-get install vim-gtk
     ```
-6. Configure the network.
+6. Configure the network.  
     ```
     sudo vi /etc/network/interfaces
 
@@ -57,7 +57,7 @@ permalink: /server/
     ```
 
     then reboot
-7. Modify the sources.list of `apt-get`.
+7. Modify the sources.list of `apt-get`.  
     ```
     sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
     sudo vi /etc/apt/sources.list
@@ -66,11 +66,11 @@ permalink: /server/
     ```
 
     [valid source list](http://wiki.ubuntu.org.cn/%E6%BA%90%E5%88%97%E8%A1%A8)
-8. Update `apt-get`
+8. Update `apt-get`  
     ```
     sudo apt-get update
     ```
-9. Check the ssh service.
+9. Check the ssh service.  
     check code:
     ```
     ps -e |grep ssh
@@ -83,7 +83,7 @@ permalink: /server/
     ```
     sudo apt-get install openssh-server
     ```
-10. Install [xfce](http://www.xfce.org/)
+10. Install [xfce](http://www.xfce.org/)  
     ```
     sudo apt-get install xfce4
     ```
