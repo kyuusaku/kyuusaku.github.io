@@ -40,7 +40,7 @@ permalink: /server/
     ```
 6. Configure the network.  
 
-    ```
+    ```sh
     	sudo vi /etc/network/interfaces
 
     	# The primary network interface
