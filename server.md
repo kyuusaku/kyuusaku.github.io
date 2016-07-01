@@ -35,53 +35,41 @@ permalink: /server/
     > grub was not installed correctly, check the process of the installation.
 4. Check the `/home` directory.
 5. Check the `vim` version. May need to update the vim version.  
-    ```
-    sudo apt-get install vim-gtk
-    ```
+    > sudo apt-get install vim-gtk
 6. Configure the network.  
-
-    	sudo vi /etc/network/interfaces 
-        -------------------------------------
-		auto eth0
-		iface eth0 inet static
-        	address 192.168.0.100      #This is your IP
-        	netmask 255.255.255.0
-        	network 192.168.0.0
-        	broadcast 192.168.0.255
-        	gateway 192.168.0.1 
-        -------------------------------------
-    	sudo vi /etc/resolv.conf 
-    	nameserver 202.112.125.53 8.8.8.8 
-
+    > sudo vi /etc/network/interfaces 
+	> 
+	> auto eth0
+	> iface eth0 inet static
+    >  	address 192.168.0.100      #This is your IP
+    >  	netmask 255.255.255.0
+    >  	network 192.168.0.0
+    >  	broadcast 192.168.0.255
+    >  	gateway 192.168.0.1 
+    >
+    > sudo vi /etc/resolv.conf 
+    > nameserver 202.112.125.53 8.8.8.8 
     then reboot
 7. Modify the sources.list of `apt-get`.  
-    ```
-    sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
-    sudo vi /etc/apt/sources.list
-
-    `cn` instead of `us`
-    ```
+    > sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
+    > sudo vi /etc/apt/sources.list
+    > `cn` instead of `us`
 
     [valid source list](http://wiki.ubuntu.org.cn/%E6%BA%90%E5%88%97%E8%A1%A8)
 8. Update `apt-get`  
-    ```
-    sudo apt-get update
-    ```
+    > sudo apt-get update
 9. Check the ssh service.  
     check code:
-    ```
-    ps -e |grep ssh
+    > ps -e |grep ssh
+    > or
+    > netstat -tlp
 
-    or
-
-    netstat -tlp
-    ```
     install ssh server:
-    ```
-    sudo apt-get install openssh-server
-    ```
+    > sudo apt-get install openssh-server
 10. Install [xfce](http://www.xfce.org/)  
-    ```
-    sudo apt-get install xfce4
-    ```
-11. 
+    > sudo apt-get install xfce4
+11. Install `git`
+    > sudo apt-get install git
+12. Install [xrdp](http://www.xrdp.org/)
+    > sudo apt-get install vnc4server
+    > git clone https://github.com/neutrinolabs/xrdp.git
