@@ -46,6 +46,7 @@ permalink: /server/
 
     > sudo vi /etc/network/interfaces  
 	
+
     ```
 		auto eth0  
 		iface eth0 inet static
@@ -55,6 +56,7 @@ permalink: /server/
       		broadcast 192.168.0.255
       		gateway 192.168.0.1 
     ```
+
 
     > sudo vi /etc/resolv.conf 
     
