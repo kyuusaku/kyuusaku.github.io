@@ -84,11 +84,9 @@ permalink: /server/
 
     check code:
 
-    > ps -e |grep ssh
-
-    > or
-
-    > netstat -tlp
+    > ps -e |grep ssh  
+    > or  
+    > netstat -tlp  
 
     install ssh server:
 
