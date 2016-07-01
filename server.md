@@ -47,7 +47,7 @@ permalink: /server/
     > sudo vi /etc/network/interfaces  
 	
 
-    ```
+    <code>
 		auto eth0  
 		iface eth0 inet static
 	  		address 192.168.0.100      #This is your IP
@@ -55,7 +55,7 @@ permalink: /server/
       		network 192.168.0.0
       		broadcast 192.168.0.255
       		gateway 192.168.0.1 
-    ```
+    </code>
 
 
     > sudo vi /etc/resolv.conf 
