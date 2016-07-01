@@ -103,6 +103,7 @@ permalink: /server/
     > sudo apt-get install git
 
 * Install [xrdp](http://www.xrdp.org/)  
+
 	```
     sudo apt-get install vnc4server
     git clone https://github.com/neutrinolabs/xrdp.git
