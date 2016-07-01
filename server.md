@@ -105,10 +105,16 @@ permalink: /server/
 
 * Install `Gpu Driver`
 
-    download [cuda toolkit](https://developer.nvidia.com/cuda-downloads)  
-    download [cudnn]()  
+    download [cuda toolkit](https://developer.nvidia.com/cuda-downloads) and run  
+    download [cudnn]() and decompression and copy 
+
+    > Please make sure that  
+     -   PATH includes /usr/local/cuda-7.5/bin
+     -   LD_LIBRARY_PATH includes /usr/local/cuda-7.5/lib64, or, add /usr/local/cuda-7.5/lib64 to /etc/ld.so.conf and run ldconfig as root
 
 
 * Install `Matlab`
+
+
 
 * Install [MatConvNet](http://www.vlfeat.org/matconvnet/)
