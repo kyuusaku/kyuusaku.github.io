@@ -26,4 +26,6 @@ I am currently a PHD candidate with School of Electronic and Information Enginee
 * [Segmentation](/segmentation/)
 * [Weakly supervised learning](/weakly_supervised_learning/)
 * [Unsupervised learning](/unsupervised_learning/)
+* [Image processing](/image_processing/)
+* [Autonomous Vehicles](/autonomous_vehicles/)
 * [Applications]()

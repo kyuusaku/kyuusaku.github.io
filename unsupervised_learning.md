@@ -4,20 +4,30 @@ title: Unsupervised learning
 permalink: /unsupervised_learning/
 ---
 
+
+
+
 * Unsupervised Learning of **Edges** 
-[paper](http://arxiv.org/abs/1511.04166)
+[paper](http://arxiv.org/abs/1511.04166)  
+    They propose to train edge detectors using motion in place of human supervision.
+    Iterative Learning Procedure:  
+
+    + estimate optical flow using previous edge maps;
+    + detect motion edges;
+    + train new edge detector using motion edges;
+    + apply edge detector to all frames.
 
 
 * Unsupervised Learning of **Visual Representations** using Videos
 [project](http://www.cs.cmu.edu/~xiaolonw/unsupervise.html)  
     They try to answer the following questions:  
 	+ is strong-supervision necessary for training these CNNs?
-	+ Do we really need millions of semantically-labeled images to learn a good representation?  
+	+ do we really need millions of semantically-labeled images to learn a good representation?  
 
     *It seems humans can learn visual representations using little or no semantic supervision.* They argue that static images themselves might not have enough information to learn a good visual representation. *In fact, humans also learn their visual representations not from millions of static images but years of dynamic sensory inputs.*  
 
     Method:  
-    
+
     + track millions of “moving” patches in hundreds of thousands of videos; (*The key idea is that two patches connected by a track should have similar visual representation in deep feature space since they probably belong to the same object.*)
 	+ train a Siamese-triplet network with ranking loss; (*This ranking loss function enforces that in the final deep feature space the first frame patch should be much closer to the tracked patch than any other randomly sampled patch.*)
 	+ transfer the learned representations to the tasks with supervised data.

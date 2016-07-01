@@ -18,3 +18,10 @@ permalink: /conference_journals/
 #### Conference
 
 * [Computer Vision Foundation open access](http://www.cv-foundation.org/openaccess/menu.py)
+
+
+#### Journals
+
+* **PAMI** [index](https://www.computer.org/web/tpami;jsessionid=5c142003a3e2fc67fa6dca0f921b) [paper](http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=34)
+
+* **TIP** [paper](http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83)

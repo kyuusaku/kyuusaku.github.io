@@ -13,3 +13,5 @@ permalink: /segmentation/
 [code](https://github.com/shelhamer/fcn.berkeleyvision.org)  
 Key words: end-to-end, pixels-to-pixels, spatially dense prediction.  
 Skip architecture: combines semantic information from a deep, coarse layer with appearance information from a shallow, fine layer to produce accurate and detailed segmentations. Using per-pixel softmax loss.
+
+* **Learning Hierarchical Features for Scene Labeling**
