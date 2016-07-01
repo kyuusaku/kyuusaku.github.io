@@ -45,23 +45,23 @@ permalink: /server/
 * Configure the network.  
 
     > sudo vi /etc/network/interfaces  
- 
+	> 
 	> auto eth0  
-
+	>
 	> iface eth0 inet static
-
+	>
     >  	address 192.168.0.100      #This is your IP
-
+    >
     >  	netmask 255.255.255.0
-
+    >
     >  	network 192.168.0.0
-
+    >
     >  	broadcast 192.168.0.255
-
+    >
     >  	gateway 192.168.0.1 
 
     > sudo vi /etc/resolv.conf 
-
+    >
     > nameserver 202.112.125.53 8.8.8.8 
 
     then reboot
@@ -105,5 +105,5 @@ permalink: /server/
 * Install [xrdp](http://www.xrdp.org/)  
 
     > sudo apt-get install vnc4server
-    
+
     > git clone https://github.com/neutrinolabs/xrdp.git
