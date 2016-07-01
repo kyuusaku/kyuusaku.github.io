@@ -39,6 +39,7 @@ permalink: /server/
     sudo apt-get install vim-gtk
     ```
 6. Configure the network.  
+
     ```
     sudo vi /etc/network/interfaces
 
