@@ -13,7 +13,7 @@ permalink: /server/
 
 ### Commands
 
-**Ubuntu**  
+> **Ubuntu**  
 
 * [apt-get](http://jingyan.baidu.com/article/22a299b51648e09e19376ae7.html)  
 * [useradd](http://jingyan.baidu.com/article/9158e00041e0b5a255122856.html)  
