@@ -43,7 +43,6 @@ permalink: /server/
 	<code>
     	sudo vi /etc/network/interfaces
 
-    	#The primary network interface
 		auto eth0
 		iface eth0 inet static
         	address 192.168.0.100      #This is your IP
@@ -51,7 +50,7 @@ permalink: /server/
         	network 192.168.0.0
         	broadcast 192.168.0.255
         	gateway 192.168.0.1
-        	
+
     	sudo vi /etc/resolv.conf
     	nameserver 202.112.125.53 8.8.8.8
     </code>
