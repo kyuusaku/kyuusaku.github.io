@@ -55,7 +55,7 @@ permalink: /server/
     >  		gateway 192.168.0.1  
 
     > sudo vi /etc/resolv.conf  
-   	> nameserver 202.112.125.53 8.8.8.8 
+    > nameserver 202.112.125.53 8.8.8.8  
 
     then reboot
 
