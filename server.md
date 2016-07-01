@@ -103,10 +103,14 @@ permalink: /server/
     > sudo apt-get install git
 
 * Install [xrdp](http://www.xrdp.org/)  
+	```
+    sudo apt-get install vnc4server
+    git clone https://github.com/neutrinolabs/xrdp.git
+    ```
 
-    > sudo apt-get install vnc4server
+* Install `Gpu Driver`
 
-    > git clone https://github.com/neutrinolabs/xrdp.git
+    download [cuda toolkit](https://developer.nvidia.com/cuda-downloads)
 
 * Install `Matlab`
 
