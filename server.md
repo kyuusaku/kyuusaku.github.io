@@ -14,6 +14,7 @@ permalink: /server/
 ### Commands
 
 > **Ubuntu**  
+
 * [apt-get](http://jingyan.baidu.com/article/22a299b51648e09e19376ae7.html)
 * [useradd](http://jingyan.baidu.com/article/9158e00041e0b5a255122856.html)
 
@@ -24,10 +25,12 @@ permalink: /server/
 1. Download necessary softwares:  
     * [ubuntu 14.04.4](http://mirrors.163.com/ubuntu-releases/14.04.4/ubuntu-14.04.4-server-amd64.iso)
     * [Rufus](https://rufus.akeo.ie/)  
+
     > Note that: Universal_USB_Installer and unetbootin do not work well.
 2. [Burn the ISO file](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows).  
-    This may take a lot of time ~ about 30 minutes ~. Thus, at the same time, write down the IP address & Gateway, Hostname & Username & password.
+    This may take a lot of time ~ *about 30 minutes* ~. Thus, at the same time, write down the IP address & Gateway, Hostname & Username & password.
 3. Install.  
+
     > error: grub rescue
     > grub was not installed correctly, check the process of the installation.
 4. Check the `/home` directory.
