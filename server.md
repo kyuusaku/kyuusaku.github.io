@@ -104,10 +104,10 @@ permalink: /server/
 
 * Install [xrdp](http://www.xrdp.org/)  
 
-	```
+	```bash
     sudo apt-get install vnc4server  
     git clone https://github.com/neutrinolabs/xrdp.git  
-    sudo apt-get install autoconf libtool  
+    sudo apt-get install autoconf libtool pkg-config  
     ```
 
 * Install `Gpu Driver`
