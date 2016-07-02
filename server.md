@@ -53,9 +53,7 @@ permalink: /server/
     >  		network 192.168.0.0  
     >  		broadcast 192.168.0.255  
     >  		gateway 192.168.0.1  
-
-    > sudo vi /etc/resolv.conf  
-    > nameserver 202.112.125.53 8.8.8.8  
+    > dns-nameserver 202.112.125.53 8.8.8.8  
 
     then reboot
 
@@ -87,6 +85,10 @@ permalink: /server/
 
     > sudo apt-get install xfce4
 
+    Missing Icons and file names with Xfce:
+
+    > Settings Manager >> Appearance >> Icons >> Tango
+
 * Install `git`  
 
     > sudo apt-get install git  
@@ -96,6 +98,11 @@ permalink: /server/
     > sudo apt-get install vnc4server  
     > git clone https://github.com/neutrinolabs/xrdp.git  
     > sudo apt-get install autoconf libtool pkg-config libssl-dev libpam0g-dev libx11-dev libxfixes-dev libxrandr-dev make  
+    > cd path to/xrdp  
+    > ./bootstrap  
+    > ./configure  
+    > make  
+    > sudo make install  
     > echo xfce4-session > ~/.xsession  
 
     edit `/etc/rc.local` before `exit 0`  
@@ -112,9 +119,38 @@ permalink: /server/
      -   PATH includes /usr/local/cuda-7.5/bin
      -   LD_LIBRARY_PATH includes /usr/local/cuda-7.5/lib64, or, add /usr/local/cuda-7.5/lib64 to /etc/ld.so.conf and run ldconfig as root
 
+    > 
+
+* Install [Sublime Text](http://www.sublimetext.com/)
+
 
 * Install `Matlab`
 
+    Must be done under the desktop environment.
 
+    > mkdir ~/matlab_iso  
+    > sudo mount -o loop MATHWORKS_R2014A.iso ~/matlab_iso  
+    > cd ~/matlab_iso  
+    > sudo ./install  
+    > sudo cp libmwservices.so /usr/local/MATLAB/R2014a/bin/glnxa64/libmwservices.so
+
+    12345-67890-12345-67890  
+
+    Create the ICON for Matlab
+
+    > touch Matlab.desktop  
+    > vi Matlab.desktop
+    > [Desktop Entry]  
+	> Type=Application  
+    > Name=Matlab  
+    > GenericName=Matlab 2014a  
+    > Comment=Matlab:The Language of Technical Computing  
+    > Exec=sh /usr/local/MATLAB/R2010b/bin/matlab -desktop  
+    > Icon=/usr/local/MATLAB/Matlab.png  
+    > Terminal=false  
+    > Categories=Development;Matlab;  
+    > sudo cp Matlab.desktop /usr/share/applications/.
 
 * Install [MatConvNet](http://www.vlfeat.org/matconvnet/)
+
+    > sudo apt-get install g++ libjpeg-dev 
