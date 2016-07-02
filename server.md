@@ -53,7 +53,7 @@ permalink: /server/
     >  		network 192.168.0.0  
     >  		broadcast 192.168.0.255  
     >  		gateway 192.168.0.1  
-    > dns-nameserver 202.112.125.53 8.8.8.8  
+    >   dns-nameserver 202.112.125.53 8.8.8.8  
 
     then reboot
 
