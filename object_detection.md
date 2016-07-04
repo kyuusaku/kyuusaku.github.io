@@ -11,7 +11,8 @@ permalink: /object_detection/
 > **2016**
 
 * **R-FCN**: Object Detection via Region-based Fully Convolutional Networks
-[paper](http://arxiv.org/abs/1605.06409)  
+[paper](http://arxiv.org/abs/1605.06409) 
+[code](https://github.com/daijifeng001/r-fcn)  
 Key: position-sensitive score maps & position-sensitive RoI pooling. (refer Figure2,3,4)  
 Solve problem: the dilemma of increasing translation *invariance* for image classification vs. respecting translation *variance* for object detection.
 
@@ -36,5 +37,8 @@ This paper demonstrates that carefully designing deep networks for object classi
 [paper]()
 [python code](https://github.com/rbgirshick/fast-rcnn)
 
-###
+
+------
+
+### Proposals
 

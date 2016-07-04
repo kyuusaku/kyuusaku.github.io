@@ -11,6 +11,10 @@ permalink: /tools/
 * [LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 * [Markdown](https://daringfireball.net/projects/markdown/syntax#p) [cn](http://www.ituring.com.cn/article/504)
 * [Jekyll](https://jekyllrb.com/docs/home/)
+* [matplotlib](http://matplotlib.org/)
+* [Opencv](http://opencv.org/)
+* [SciPy](http://scipy.org/) [Numpy](http://docs.scipy.org/doc/numpy/search.html)
+
 
 #### Question
 
@@ -20,3 +24,8 @@ permalink: /tools/
 #### Server
 
 * [Notes](/server/)
+
+
+#### Taining skills
+
+* [Codewars for python](https://www.codewars.com/)

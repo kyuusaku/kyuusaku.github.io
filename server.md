@@ -153,4 +153,5 @@ permalink: /server/
 
 * Install [MatConvNet](http://www.vlfeat.org/matconvnet/)
 
-    > sudo apt-get install g++ libjpeg-dev 
+    > sudo apt-get install g++ libjpeg-dev  
+
