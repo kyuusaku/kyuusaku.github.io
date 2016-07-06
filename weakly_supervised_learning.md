@@ -31,6 +31,7 @@ permalink: /weakly_supervised_learning/
 [code](https://github.com/lorisbaz/self-taught_localization)  
     They prove that:  
     + **for pre-trained CNNs**, when the region containing the object is artificially occluded the whole-image classification score will drop significantly. (Figure 1)  
+    
     They use the following methods to generate bounding boxes that are very likely to contain objects:  
     + use segmentation method to generate candidate regions; (*they mask out the rectangular bounding boxes enclosing the segments rather than the segments themselves. They found experimentally that if they mask out the segments, the shape information of the segment is preserved and used by the network to perform recognition, thus causing less substantial drops in classification.*)  
     + mask out image subregion by using the mean value of the individual image channels, which is effectively equivalent to zeroing out that section of the network input as well as the corresponding units in the hidden convolutional layers;  
