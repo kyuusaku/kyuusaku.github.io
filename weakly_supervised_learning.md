@@ -6,13 +6,31 @@ permalink: /weakly_supervised_learning/
 
 ------
 
+#### MIL
+
+> MIL models
+
+
+> MIL in object detection
+
+* Weakly Supervised Object Detection with **Convex Clustering**  
+
+
+
+> MIL in segmentation
+
+
+> MIL in deep learning
+
+* **GAP** Is object localization for free? – Weakly-supervised learning with convolutional neural networks  
+    
 
 > Object localization by analyzing the change in the recognition scores when feeding into different regions of the image.
 
 * **Self-Taught** Object Localization with Deep Networks
 [code](https://github.com/lorisbaz/self-taught_localization)  
     They prove that:  
-    + for deep neural networks, when the region containing the object is artificially occluded the whole-image classification score will drop significantly. (Figure 1)  
+    + **for pre-trained CNNs**, when the region containing the object is artificially occluded the whole-image classification score will drop significantly. (Figure 1)  
     They use the following methods to generate bounding boxes that are very likely to contain objects:  
     + use segmentation method to generate candidate regions; (*they mask out the rectangular bounding boxes enclosing the segments rather than the segments themselves. They found experimentally that if they mask out the segments, the shape information of the segment is preserved and used by the network to perform recognition, thus causing less substantial drops in classification.*)  
     + mask out image subregion by using the mean value of the individual image channels, which is effectively equivalent to zeroing out that section of the network input as well as the corresponding units in the hidden convolutional layers;  
