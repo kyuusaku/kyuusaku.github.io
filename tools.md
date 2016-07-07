@@ -8,6 +8,7 @@ permalink: /tools/
 
 #### Documents
 
+* [LaTeX](https://en.wikibooks.org/wiki/LaTeX)  
 * [LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 * [Markdown](https://daringfireball.net/projects/markdown/syntax#p) [cn](http://www.ituring.com.cn/article/504)
 * [Jekyll](https://jekyllrb.com/docs/home/)

@@ -6,6 +6,13 @@ permalink: /cnn_map/
 
 ------
 
+> Factors are responsible for the success of CNN  
+
+* the availability of large training sets;  
+* powerful GPU implementations;
+* correct architectures.
+
+
 ## Network architectures
 
 
@@ -33,7 +40,7 @@ Key: Inception module. No. of layers: 22.
 * **NIN**:Network In Network 
 [paper](http://arxiv.org/abs/1312.4400)
 [architecture](http://ethereon.github.io/netscope/#/preset/nin)  
-Motivation: Enhancing the local linear model (convolution filter) by multilayer perceptron (\\(1\times1\\) convolution kernel). Rectified linear unit is used as the activation function in the multilayer perceptron.They argue that conventional CNN implicitly makes the assumption that the latent concepts are linearly separable.
+Motivation: Enhancing the local linear model (convolution filter) by multilayer perceptron ($$1\times1$$ convolution kernel). Rectified linear unit is used as the activation function in the multilayer perceptron.They argue that conventional CNN implicitly makes the assumption that the latent concepts are linearly separable.
 
 
 
@@ -46,6 +53,8 @@ Motivation: Enhancing the local linear model (convolution filter) by multilayer 
 
 ## Visualization
 
+* Visualizing and Understanding Convolutional Networks  
+    Key: multi-layered **Deconvolutional Network** (deconvnet: project the feature activations back to the input pixel space) [details: see notes]()
 
 
 ------

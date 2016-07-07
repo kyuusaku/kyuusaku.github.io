@@ -162,3 +162,21 @@ $$
 $$
 
 Note: before summation of the bottom diff, remember multiply the corresponding top diff.
+
+#### Supplement:
+
+> The operation that **subtracting the max** does not change the softmax function value
+
+**Proof:**  
+$$
+\sigma (\mathbf{z}-z_{max})_{i}
+=
+\frac {e^{z_{i}-z_{max}}}{\sum_{k=1}^{K}e^{z_{k}-z_{max}}}
+=
+\frac { \frac {e^{z_{i}}} {e^{z_{max}}} }{ \frac {(\sum_{k=1}^{K}e^{z_{k}})} {e^{z_{max}}} }
+=
+\frac {e^{z_{i}}}{\sum_{k=1}^{K}e^{z_{k}}}
+=
+\sigma (\mathbf{z})_{i}
+$$
+for $$i=1,\dots,K.$$

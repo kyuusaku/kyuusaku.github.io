@@ -11,7 +11,11 @@ permalink: /weakly_supervised_learning/
 > MIL models
 
 
-> MIL in object detection
+#### MIL in object detection  
+
+> The following methods aim to directly train the object detectors by selecting true positive examples (MIL strategy).
+
+> The MIL strategy results in a non-convex optimization problem; in practice, solvers tend to get stuck in local optima such that the quality of the solution strongly depends on the initialization.  
 
 * Weakly Supervised Object Detection with **Convex Clustering**  
 
@@ -21,6 +25,9 @@ permalink: /weakly_supervised_learning/
 
 
 > MIL in deep learning
+
+* Weakly Supervised Deep Detection Networks  
+
 
 * **GAP** Is object localization for free? – Weakly-supervised learning with convolutional neural networks  
     
