@@ -17,6 +17,10 @@ permalink: /weakly_supervised_learning/
 
 > The MIL strategy results in a non-convex optimization problem; in practice, solvers tend to get stuck in local optima such that the quality of the solution strongly depends on the initialization.  
 
+
+* On learning to localize objects with minimal supervision
+
+
 * Weakly Supervised Object Detection with **Convex Clustering**  
 
 

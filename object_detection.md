@@ -24,6 +24,9 @@ A simple yet effective online hard example mining algorithm for training any Fas
 
 > **2015**
 
+* **DenseBox**
+
+
 * Object Detection Networks on Convolutional Feature Maps
 [paper](http://arxiv.org/abs/1504.06066)  
 This paper demonstrates that carefully designing deep networks for object classification is just as important. About 2% improvement. (proposed method: refer Figure 1)
@@ -38,7 +41,42 @@ This paper demonstrates that carefully designing deep networks for object classi
 [python code](https://github.com/rbgirshick/fast-rcnn)
 
 
+> **2014**
+
+* **R-CNN**
+
 ------
 
 ### Proposals
+
+> top-down pipeline  
+
+
+
+> segmentation-based algorithms  
+
+* **MCG** (Multiscale Combinatorial Grouping)
+
+* **selective search**  
+
+* **Randomized Prim**
+
+* **Geodesic**
+
+
+> measure objectness  
+
+**how likely an image window is an object?**
+
+* **What is an object?**  
+
+* **BING**  
+
+* **Edgeboxes**
+
+* **DeepProposal**: Hunting Objects by Cascading Deep Convolutional Layers 
+[paper](http://arxiv.org/abs/1510.04445) 
+[code](https://github.com/aghodrati/deepproposal)  
+
+    Use linear SVM to train a proposal detector based on CNN features. A little higher recall. Similar to BING. (many training details, see the paper)
 
