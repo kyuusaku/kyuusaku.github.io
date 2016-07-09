@@ -66,7 +66,7 @@ This paper demonstrates that carefully designing deep networks for object classi
 
 > measure objectness  
 
-**how likely an image window is an object?**
+    *how likely an image window is an object?*
 
 * **What is an object?**  
 
@@ -80,3 +80,5 @@ This paper demonstrates that carefully designing deep networks for object classi
 
     Use linear SVM to train a proposal detector based on CNN features. A little higher recall. Similar to BING. (many training details, see the paper)
 
+* **DeepBox** Learning Objectness with Convolutional Networks  
+    They believe that *objectness* is in fact a high level construct. They train a CNN to rerank proposals produced by *Edgeboxes*. 
