@@ -6,7 +6,7 @@ permalink: /weakly_supervised_learning/
 
 ------
 
-#### MIL
+### MIL
 
 > MIL models
 
@@ -18,25 +18,31 @@ permalink: /weakly_supervised_learning/
 > The MIL strategy results in a non-convex optimization problem; in practice, solvers tend to get stuck in local optima such that the quality of the solution strongly depends on the initialization.  
 
 
-* On learning to localize objects with minimal supervision
+* On learning to localize objects with minimal supervision  
+    Key: **smoothed latent SVM**. (SS & CNN features)  
 
 
 * Weakly Supervised Object Detection with **Convex Clustering**  
 
 
 
-> MIL in segmentation
+#### MIL in segmentation
 
+* Fully Convolutional Multi-Class Multiple Instance Learning 
+[paper](http://arxiv.org/abs/1412.7144)  
+    They cast each image as a bag of pixel-level-instances and define a pixelwise, multi-class adaptation of MIL for the loss.  
+    $$(x_l,y_l)=\arg \max_{\forall (x,y)} \hat{p}_l(x,y), \forall l \in \mathcal{L}_I$$
 
-> MIL in deep learning
+#### MIL in deep learning
 
 * Weakly Supervised Deep Detection Networks  
+    
 
 
 * **GAP** Is object localization for free? – Weakly-supervised learning with convolutional neural networks  
     
 
-> Object localization by analyzing the change in the recognition scores when feeding into different regions of the image.
+#### Object localization by analyzing the change in the recognition scores when feeding into different regions of the image.
 
 * **Self-Taught** Object Localization with Deep Networks
 [code](https://github.com/lorisbaz/self-taught_localization)  
@@ -51,8 +57,9 @@ permalink: /weakly_supervised_learning/
     + compare the classification scores of the original image to those of the masked-out image. if the difference for the $$c$$-th class is large, the masked-out region is very discriminative for that class. Thus such region is deemed likely to contain the object of class $$c$$;
     + fuse regions (bottom-up) and generate windows that are likely to contain objects (top-down). (*similarly to Selective Search. For detail comparisions, please refer the paper.*)
 
+------
 
-#### Attention models
+### Attention models
 
 > **2016**
 

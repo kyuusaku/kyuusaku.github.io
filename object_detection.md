@@ -66,19 +66,22 @@ This paper demonstrates that carefully designing deep networks for object classi
 
 > measure objectness  
 
-    *how likely an image window is an object?*
+$$how likely an image window is an object?$$
 
 * **What is an object?**  
 
 * **BING**  
 
-* **Edgeboxes**
+* **Edgeboxes**  
+    bounding boxes which have fewer contours straggling the boundary of the box are considered more likely to be ob-jects.  
 
 * **DeepProposal**: Hunting Objects by Cascading Deep Convolutional Layers 
 [paper](http://arxiv.org/abs/1510.04445) 
 [code](https://github.com/aghodrati/deepproposal)  
 
-    Use linear SVM to train a proposal detector based on CNN features. A little higher recall. Similar to BING. (many training details, see the paper)
+    Use linear SVM to train a proposal detector based on CNN features. A little higher recall. Similar to BING. (many training details, see the paper) (AlexNet)  
 
-* **DeepBox** Learning Objectness with Convolutional Networks  
-    They believe that *objectness* is in fact a high level construct. They train a CNN to rerank proposals produced by *Edgeboxes*. 
+* **DeepBox** Learning Objectness with Convolutional Networks 
+[paper](http://arxiv.org/abs/1505.02146) 
+[code](https://github.com/weichengkuo/DeepBox)  
+    They believe that *objectness* is in fact a high level construct. They train a CNN to rerank proposals produced by *Edgeboxes*. (*Demonstrating that low-level information is not sufficient to describe objectness*) (ablation from AlexNet) The training procedure consists of two stages (see 3.3).  
