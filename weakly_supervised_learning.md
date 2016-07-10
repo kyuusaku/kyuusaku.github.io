@@ -31,7 +31,8 @@ permalink: /weakly_supervised_learning/
 * Fully Convolutional Multi-Class Multiple Instance Learning 
 [paper](http://arxiv.org/abs/1412.7144)  
     They cast each image as a bag of pixel-level-instances and define a pixelwise, multi-class adaptation of MIL for the loss.  
-    $$(x_l,y_l)=\arg \max_{\forall (x,y)} \hat{p}_l(x,y), \forall l \in \mathcal{L}_I$$
+    $$(x_l,y_l)=\arg \max_{\forall (x,y)} \hat{p}_l(x,y), \forall l \in \mathcal{L}_I$$  
+    $$LOSS=\frac{-1}{|\mathcal{L}_I|} \sum_{l \in \mathcal{L}_I} \log \hat{p}_l(x_l,y_l)$$
 
 #### MIL in deep learning
 
@@ -42,7 +43,7 @@ permalink: /weakly_supervised_learning/
 * **GAP** Is object localization for free? – Weakly-supervised learning with convolutional neural networks  
     
 
-#### Object localization by analyzing the change in the recognition scores when feeding into different regions of the image.
+> Object localization by analyzing the change in the recognition scores when feeding into different regions of the image.
 
 * **Self-Taught** Object Localization with Deep Networks
 [code](https://github.com/lorisbaz/self-taught_localization)  
