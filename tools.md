@@ -14,13 +14,14 @@ permalink: /tools/
 * [Jekyll](https://jekyllrb.com/docs/home/)
 * [matplotlib](http://matplotlib.org/)
 * [Opencv](http://opencv.org/)
+* [Skimage](http://scikit-image.org/) *Image processing in Python*
 * [SciPy](http://scipy.org/) [Numpy](http://docs.scipy.org/doc/numpy/search.html)
 
 
 #### Question
 
 * [Quora](https://www.quora.com/)
-
+* [Cuda-gpus](https://developer.nvidia.com/cuda-gpus) *Compute capability comparision*
 
 #### Server
 
