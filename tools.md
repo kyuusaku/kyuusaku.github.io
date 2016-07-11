@@ -21,12 +21,12 @@ permalink: /tools/
 #### Question
 
 * [Quora](https://www.quora.com/)
-* [Cuda-gpus](https://developer.nvidia.com/cuda-gpus) *Compute capability comparision*
+
 
 #### Server
 
 * [Notes](/server/)
-
+* [Cuda-gpus](https://developer.nvidia.com/cuda-gpus) *Compute capability comparision*
 
 #### Taining skills
 
