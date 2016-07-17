@@ -63,6 +63,7 @@ permalink: /weakly_supervised_learning/
 ### Attention models
 
 Humans focus attention selectively on parts of the visual space to acquire information when and where it is needed, and combine information from different fixations over time to build up an internal representation of the scene [18], guiding future eye movements and decision making.  
+
 * reduce the computation  
 * reduce the task complexity (the object of interest can be placed in the center of the fixation and irrelevant features of the visual environment (“clutter”) outside the fixated region are naturally ignored)
 
@@ -93,11 +94,12 @@ Humans focus attention selectively on parts of the visual space to acquire infor
 > **2014**
 
 * **RAM (Recurrent Attention Model)** Recurrent Models of Visual Attention (*Google DeepMind*)  
-    Problem: the amount of computation scales linearly with the number of image pixels.  
-    Idea: adaptively selecting a sequence of regions or locations and only processing the selected regions at high resolution. (similar to the baby work: on learning where to look)  
-    Method: Based on RNN. Process input sequentially. Select the next location based on past information and the demands of the task. (see Fig.1 (B Glimpse Network)) They evaluate their model on several image classification tasks (Translated MNIST & Clutted Translated MNIST).  
-    Drawback: the model is non-differentiable, trained using reinforcement learning.  
+    *Problem*: the amount of computation scales linearly with the number of image pixels.  
+    *Idea*: adaptively selecting a sequence of regions or locations and only processing the selected regions at high resolution. (similar to the baby work: on learning where to look)  
+    *Method*: Based on RNN. Process input sequentially. Select the next location based on past information and the demands of the task. (see Fig.1 (B Glimpse Network)) They evaluate their model on several image classification tasks (Translated MNIST & Clutted Translated MNIST).  
+    *Drawback*: the model is non-differentiable, trained using reinforcement learning.  
 
-**Reference:**
+**Reference:**  
+
 * [自然语言处理中的Attention Model：是什么及为什么](http://blog.csdn.net/malefactor/article/details/50550211)
 
