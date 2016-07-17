@@ -23,4 +23,11 @@ permalink: /popular_groups_people/
 
 ### Nice blogs
 
+> English
+
 * [Peter's notes](http://peterroelants.github.io/)
+
+
+> Chinese
+
+* [Junlin Zhang](http://blog.csdn.net/malefactor)

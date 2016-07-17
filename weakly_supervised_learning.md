@@ -62,10 +62,42 @@ permalink: /weakly_supervised_learning/
 
 ### Attention models
 
+Humans focus attention selectively on parts of the visual space to acquire information when and where it is needed, and combine information from different fixations over time to build up an internal representation of the scene [18], guiding future eye movements and decision making.  
+* reduce the computation  
+* reduce the task complexity (the object of interest can be placed in the center of the fixation and irrelevant features of the visual environment (“clutter”) outside the fixated region are naturally ignored)
+
 > **2016**
 
 * **Attention Correctness** in Neural Image Captioning  
     The proposed evauation metric:  
     Let $$R$$ be the groundtruth attention region, the attention correctness is $$AC=\sum_{i \in R} \alpha_{i}$$, which is a score between 0 and 1. $$\alpha_{i}$$ is resized and normalized in order to ensure size consistency. The baseline score is simply the percentage of the bounding box size over the size of the whole image. Draw histograms of attention correctness.  
 
+> **2015**
+
+* Effective Approaches to Attention-based Neural Machine Translation  
+
+
+* Show, Attend and Tell: Neural Image Caption Generation with Visual Attention (Equ.4,5,6)  
+    Extension of SAM for image caption generation.
+
+* **Soft Attention Model (Alignment model)** Neural Machine Translation by Jointly Learning to Align and Translate (Most Related. Refer Sec.3.1) 
+[implementation](https://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-gpus-part-3/)  
+    A popular framework in NLP.
+
+* Attention for Fine-Grained Categorization (*Google*)  
+    Extension of **DRAM**.
+
+* **DRAM** Multiple Object Recognition with Visual Attention (*Google*)  
+    Application of **RAM** on multiple digit recognition.
+
+> **2014**
+
+* **RAM (Recurrent Attention Model)** Recurrent Models of Visual Attention (*Google DeepMind*)  
+    Problem: the amount of computation scales linearly with the number of image pixels.  
+    Idea: adaptively selecting a sequence of regions or locations and only processing the selected regions at high resolution. (similar to the baby work: on learning where to look)  
+    Method: Based on RNN. Process input sequentially. Select the next location based on past information and the demands of the task. (see Fig.1 (B Glimpse Network)) They evaluate their model on several image classification tasks (Translated MNIST & Clutted Translated MNIST).  
+    Drawback: the model is non-differentiable, trained using reinforcement learning.  
+
+**Reference:**
+* [自然语言处理中的Attention Model：是什么及为什么](http://blog.csdn.net/malefactor/article/details/50550211)
 
