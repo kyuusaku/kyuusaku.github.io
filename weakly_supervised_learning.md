@@ -85,8 +85,9 @@ Humans focus attention selectively on parts of the visual space to acquire infor
 [implementation](https://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-gpus-part-3/)  
     A popular framework in NLP.
 
-* **DRAW**: A Recurrent Neural Network For Image Generation (*Google*)
-     
+* **DRAW**: A Recurrent Neural Network For Image Generation (*Google DeepMind* *Interesting work*)
+    *Advantage*: fully differentiable.  
+    *Method*: an explicitly two-dimensional form of attention, where an array of 2D Gaussian filters is applied to the image, yielding an image ‘patch’ of smoothly varying location and zoom.
 
 * Attention for Fine-Grained Categorization (*Google*)  
     Extension of **DRAM**.
