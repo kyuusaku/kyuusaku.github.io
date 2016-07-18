@@ -75,7 +75,7 @@ Humans focus attention selectively on parts of the visual space to acquire infor
 
 > **2015**
 
-* Effective Approaches to Attention-based Neural Machine Translation  
+
 
 
 * Show, Attend and Tell: Neural Image Caption Generation with Visual Attention (Equ.4,5,6)  
@@ -84,6 +84,9 @@ Humans focus attention selectively on parts of the visual space to acquire infor
 * **Soft Attention Model (Alignment model)** Neural Machine Translation by Jointly Learning to Align and Translate (Most Related. Refer Sec.3.1) 
 [implementation](https://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-gpus-part-3/)  
     A popular framework in NLP.
+
+* **DRAW**: A Recurrent Neural Network For Image Generation (*Google*)
+     
 
 * Attention for Fine-Grained Categorization (*Google*)  
     Extension of **DRAM**.
