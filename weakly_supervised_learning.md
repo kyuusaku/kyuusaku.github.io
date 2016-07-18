@@ -76,7 +76,7 @@ Humans focus attention selectively on parts of the visual space to acquire infor
 > **2015**
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Soft alignment ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$$ Soft \quad alignment $$
 
 * Show, Attend and Tell: Neural Image Caption Generation with Visual Attention (Equ.4,5,6)  
     Extension of SAM for image caption generation.
@@ -85,7 +85,7 @@ Humans focus attention selectively on parts of the visual space to acquire infor
 [implementation](https://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-gpus-part-3/)  
     A popular framework in NLP.
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Latent parameter~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$$ Latent \quad parameter $$
 
 * **DRAW**: A Recurrent Neural Network For Image Generation (*Google DeepMind* *Interesting work*)
     *Advantage*: fully differentiable.  
