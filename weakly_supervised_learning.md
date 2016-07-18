@@ -87,7 +87,11 @@ $$ Soft \quad alignment $$
 
 $$ Latent \quad parameter $$
 
-* **DRAW**: A Recurrent Neural Network For Image Generation (*Google DeepMind* *Interesting work*)
+* **STN**: Spatial Transformer Networks (*Google DeepMind*)  
+    *Problem*: CNNs are limited by the lack of ability to be spatially invariant to the input data in a computationally and parameter efficient manner. Due to the typically small spatial support for max-pooling, this spatial invariance is only realised over a deep hierarchy of max-pooling and convolutions, and the intermediate feature maps in a CNN are not actually invariant to large transformations of the input data. The limitation of CNNs is due to having only a limited, pre-defined pooling mechanism for dealing with variations in the spatial arrangement of data.  
+    *Advantage*: (1) select regions of an image that are most relevant; (2) transform those regions to a canonical, expected pose to simplify inference in the subsequent layers.  
+
+* **DRAW**: A Recurrent Neural Network For Image Generation (*Google DeepMind* *Interesting work*)  
     *Advantage*: fully differentiable.  
     *Method*: an explicitly two-dimensional form of attention, where an array of 2D Gaussian filters is applied to the image, yielding an image ‘patch’ of smoothly varying location and zoom.
 
