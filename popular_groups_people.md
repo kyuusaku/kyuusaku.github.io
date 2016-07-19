@@ -13,7 +13,7 @@ permalink: /popular_groups_people/
 
 ### People
 
-
+* [Yann LeCun](http://yann.lecun.com/)
 * [Kaiming He](http://kaiminghe.com/)
 * [Ross B. Girshick](http://people.eecs.berkeley.edu/~rbg/)
 * [Piotr Dollar](https://pdollar.github.io/index.html)
