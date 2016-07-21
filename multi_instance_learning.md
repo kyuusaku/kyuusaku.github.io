@@ -17,12 +17,14 @@ In statistical pattern recognition, it is usually assumed that a training set of
     
     **mi-SVM**  
 
-    $$ \min_{y_i}\min_{\mathbf{w},b,\xi} \frac{1}{2} \| \mathbf{w} \| + C \sum_i \xi_i 
-    s.t. \forall i : y_i(\langle \mathbf{w}, \mathbf{x}_i \rangle + b) \geq 1 - \xi_i, \xi_i \geq 0, y_i \in {-1,1} and \sum_{i \in I} \frac{y_i+1}{2} \geq 1, \forall I s.t. Y_I=1, y_i = -1, \forall I s.t. Y_I = -1$$
+    $$ \min_{y_i}\min_{\mathbf{w},b,\xi} \frac{1}{2} \| \mathbf{w} \| + C \sum_i \xi_i $$  
+    $$ s.t. \forall i : y_i(\langle \mathbf{w}, \mathbf{x}_i \rangle + b) \geq 1 - \xi_i, \xi_i \geq 0, y_i \in {-1,1} $$
+    $$ and \sum_{i \in I} \frac{y_i+1}{2} \geq 1, \forall I s.t. Y_I=1, y_i = -1, \forall I s.t. Y_I = -1 $$
 
     Notice that in the standard classification setting, the labels $$y_i$$ of training patterns $$\mathbf{x}_i$$ would simply be given, while in MIL labels $$y_i$$ of patterns $$\mathbf{x}_i$$ not belonging to any negative bag are treated as unknown integer variables. The mi-SVM formulation leads to a mixed integer programming problem. One has to find both the optimal labeling and the optimal hyperplane.  
 
-        initialize y_i=Y_I for i \in I 
+    $$initialize y_i=Y_I for i \in I$$  
+    $$ $$
 
     **MI-SVM**  
 
