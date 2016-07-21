@@ -54,7 +54,8 @@ Motivation: Enhancing the local linear model (convolution filter) by multilayer 
 ## Visualization
 
 * Visualizing and Understanding Convolutional Networks  
-    Key: multi-layered **Deconvolutional Network** (deconvnet: project the feature activations back to the input pixel space) [details: see notes]()
+    Key: multi-layered **Deconvolutional Network** (deconvnet: project the feature activations back to the input pixel space) [details: see notes]()  
+    
 
 
 ------

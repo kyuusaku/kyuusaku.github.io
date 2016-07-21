@@ -12,6 +12,3 @@ permalink: /image_processing/
 * [**EpicFlow**](http://lear.inrialpes.fr/src/epicflow/)
 
 
-### 3D scene flow
-
-*scene flow*: dense 3D motion fields.
