@@ -155,3 +155,22 @@ permalink: /server/
 
     > sudo apt-get install g++ libjpeg-dev  
 
+* Install `Chrome`  
+
+    > sudo apt-get install chromium-browser
+
+* Install `Terminal`
+
+    > sudo apt-get install xfce4-terminal
+
+* Chinese Support  
+
+    > cp -r wqy /usr/share/fonts/truetype/wqy
+
+* Install `Filezilla`  
+
+    > sudo apt-get install filezilla  
+
+* Image Viewers  
+
+    http://askubuntu.com/questions/295702/alternative-image-viewers
