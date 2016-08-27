@@ -13,5 +13,5 @@ $$
 z=\sum_{d=1}^{D} a_d * b_d=a_1*b_1+\cdots+a_D*b_D.
 $$  
 $$
-\frac{\patial z}{\patial a_d} = b_d;\frac{\patial z}{\patial b_d} = a_d.
+\frac{\partial z}{\patial a_d} = b_d;\frac{\partial z}{\patial b_d} = a_d.
 $$
