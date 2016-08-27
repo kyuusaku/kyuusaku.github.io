@@ -28,4 +28,5 @@ I am currently a PHD candidate with School of Electronic and Information Enginee
 * [Unsupervised learning](/unsupervised_learning/)
 * [Image processing](/image_processing/)
 * [Autonomous Vehicles](/autonomous_vehicles/)
+* [Face Recognition](/face_recognition/)
 * [Applications]()

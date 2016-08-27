@@ -19,14 +19,15 @@ In statistical pattern recognition, it is usually assumed that a training set of
 
     $$ \min_{y_i}\min_{\mathbf{w},b,\xi} \frac{1}{2} \| \mathbf{w} \| + C \sum_i \xi_i $$  
 
-    $$ s.t. \forall i : y_i(\langle \mathbf{w}, \mathbf{x}_i \rangle + b) \geq 1 - \xi_i, \xi_i \geq 0, y_i \in {-1,1} $$  
-    
+    $$ s.t. \forall i : y_i(\langle \mathbf{w}, \mathbf{x}_i \rangle + b) \geq 1 - \xi_i, \xi_i \geq 0, y_i \in \{-1,1\} $$  
+
     $$ and \sum_{i \in I} \frac{y_i+1}{2} \geq 1, \forall I s.t. Y_I=1, y_i = -1, \forall I s.t. Y_I = -1 $$
 
     Notice that in the standard classification setting, the labels $$y_i$$ of training patterns $$\mathbf{x}_i$$ would simply be given, while in MIL labels $$y_i$$ of patterns $$\mathbf{x}_i$$ not belonging to any negative bag are treated as unknown integer variables. The mi-SVM formulation leads to a mixed integer programming problem. One has to find both the optimal labeling and the optimal hyperplane.  
 
-    $$initialize y_i=Y_I for i \in I$$  
-    $$ $$
+    * Pseudo-code for mi-SVM optimization heuristics *   
+    initialize $$y_i=Y_I$$ for $$i \in I$$
+    
 
     **MI-SVM**  
 
@@ -35,6 +36,14 @@ In statistical pattern recognition, it is usually assumed that a training set of
 ------
 
 ### Applications in Joint Localization & Classification
+
+> **2016**
+
+* **WELDON**: Weakly Supervised Learning of Deep Convolutional Neural Networks  
+    Key difference:  
+    1. negative evidence scoring and top instance selection. The intuition behind top instance selection increases the risk of selecting outliers, guiding the training of the deep CNN towards bad local minima. Negative selection means using regions which best support the absence of the class.  
+    2. the deep CNN is trained to optimize Average Precision.
+
 
 > **2009**
 
@@ -53,7 +62,12 @@ In statistical pattern recognition, it is usually assumed that a training set of
     Key: **smoothed latent SVM**. (SS & CNN features)  
 
 
+> **2015**
+
 * Weakly Supervised Object Detection with **Convex Clustering**  
+
+
+
 
 
 ### Applications in Segmentation  
@@ -67,11 +81,31 @@ In statistical pattern recognition, it is usually assumed that a training set of
 
 ### MIL in CNN
 
+> **2016**
+
+* Weakly Supervised Object Localization with Progressive Domain Adaptation  
+    Their key observation is that it is hard to train object detectors directly under weak supervisory signals due to the substantial amount of noise in the object proposal collections. 
+    Two main steps:  
+
+
+> **2015**
+
+* Detector Discovery in the Wild: Joint Multiple Instance and Representation Learning  
+    Joint training over both weak and strong labels and which transfer learned perceptual representations from strongly-labeled auxiliary tasks. They assume that the set of object categories that appear in the weakly labeled set, do not overlap with the set of object categories that appear in the strongly labeled set. (Method: Figure2, AlexNet, ILSVRC13 Detection Dataset, Caffe)  
+    Drawback: complex alternating minimization process.
+
+* Deep Multiple Instance Learning for Image Classification and Auto-Annotation  
+    *Dual multi-instance assumption*: object proposals and possible text annotations of am image can be regarded as two instance sets. (PASCAL VOC, MIT Indoor, Scene 67)
+
 * Weakly Supervised Deep Detection Networks  
+
+
+
+* **GMP** Is object localization for free? – Weakly-supervised learning with convolutional neural networks
+
+* **GAP** Learning Deep Features for Discriminative Localization
+
     
-
-
-* **GAP** Is object localization for free? – Weakly-supervised learning with convolutional neural networks  
     
 
 > Object localization by analyzing the change in the recognition scores when feeding into different regions of the image.

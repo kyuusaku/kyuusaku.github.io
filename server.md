@@ -23,7 +23,7 @@ permalink: /server/
 ### Installation & Configuration
 
 * Download necessary softwares:  
-    * [ubuntu 14.04.4](http://mirrors.163.com/ubuntu-releases/14.04.4/ubuntu-14.04.4-server-amd64.iso)
+    * [ubuntu 14.04.4](http://mirrors.163.com/ubuntu-releases/)
     * [Rufus](https://rufus.akeo.ie/)  
 
     > Note that: Universal_USB_Installer and unetbootin do not work well.
@@ -33,7 +33,7 @@ permalink: /server/
 
 * Install.  
 
-    > error: grub rescue
+    > error: grub rescue  
     > grub was not installed correctly, check the process of the installation.
 
 * Check the `/home` directory.  
@@ -151,7 +151,7 @@ permalink: /server/
     > Categories=Development;Matlab;  
     > sudo cp Matlab.desktop /usr/share/applications/.
 
-* Install [MatConvNet](http://www.vlfeat.org/matconvnet/)
+* Install [MatConvNet](http://www.vlfeat.org/matconvnet/)  
 
     > sudo apt-get install g++ libjpeg-dev  
 

@@ -16,6 +16,10 @@ permalink: /object_detection/
 Key: position-sensitive score maps & position-sensitive RoI pooling. (refer Figure2,3,4)  
 Solve problem: the dilemma of increasing translation *invariance* for image classification vs. respecting translation *variance* for object detection.
 
+* **SSD** Single Shot MultiBox Detector   
+
+
+
 * **Fast R-CNN with Online Hard Example Mining (OHEM)** 
 [paper](http://arxiv.org/abs/1604.03540)  
 A simple yet effective online hard example mining algorithm for training any Fast R-CNN style object detector. 2.6% improvement. Steps:  
@@ -26,6 +30,9 @@ A simple yet effective online hard example mining algorithm for training any Fas
 
 * **DenseBox**
 
+
+* **YOLO** [project](http://pjreddie.com/darknet/yolo/)  
+    They frame object detection as a regression problem to spatially separated bounding boxes and class probabilities. 
 
 * Object Detection Networks on Convolutional Feature Maps
 [paper](http://arxiv.org/abs/1504.06066)  
@@ -73,7 +80,7 @@ $$how likely an image window is an object?$$
 * **BING**  
 
 * **Edgeboxes**  
-    bounding boxes which have fewer contours straggling the boundary of the box are considered more likely to be ob-jects.  
+    bounding boxes which have fewer contours straggling the boundary of the box are considered more likely to be objects.  
 
 * **DeepProposal**: Hunting Objects by Cascading Deep Convolutional Layers 
 [paper](http://arxiv.org/abs/1510.04445) 
