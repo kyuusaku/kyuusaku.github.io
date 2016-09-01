@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Cross Entropy
+title: Cross Entropy (Log Loss)
 permalink: /cross_entropy/
 ---
 
@@ -17,6 +17,8 @@ $$H(p,q)=-\sum_{x}p(x) \log q(x)$$
 
 The situation for continuous distributions is analogous:
 $$-\int_{X}p(x)\log q(x) \mathrm{d}x$$
+
+![Alt The graph of $$log()$$](./fig/log_x.png)
 
 ------
 
