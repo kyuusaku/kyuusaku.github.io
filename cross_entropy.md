@@ -18,7 +18,7 @@ $$H(p,q)=-\sum_{x}p(x) \log q(x)$$
 The situation for continuous distributions is analogous:
 $$-\int_{X}p(x)\log q(x) \mathrm{d}x$$
 
-![Alt The graph of $$log()$$](./fig/log_x.png)
+![Alt The graph of $$log()$$](https://github.com/kyuusaku/kyuusaku.github.io/blob/master/fig/log_x.png)
 
 ------
 
