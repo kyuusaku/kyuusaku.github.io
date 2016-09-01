@@ -18,9 +18,6 @@ $$H(p,q)=-\sum_{x}p(x) \log q(x)$$
 The situation for continuous distributions is analogous:
 $$-\int_{X}p(x)\log q(x) \mathrm{d}x$$
 
-![Alt The graph of $$log()$$](/fig/log_x.png)
-
-https://github.com/kyuusaku/kyuusaku.github.io/blob/master
 ------
 
 Notes of the implementation in CNN.
@@ -97,3 +94,5 @@ $$
 #### Reference:
 * [Wiki](https://en.wikipedia.org/wiki/Cross_entropy)
 * [Softmax vs. Softmax-Loss: Numerical Stability](http://freemind.pluskid.org/machine-learning/softmax-vs-softmax-loss-numerical-stability/)
+
+![Alt](/fig/log_x.png)
