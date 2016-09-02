@@ -100,7 +100,12 @@ $$
    \end{cases}
 $$  
 
+Using the following equations,  
+$$ - \log \left( 1+e^{-z_i} \right) = z_i - \log \left( 1+e^{z_i} \right) $$  
+$$ - \log \left( 1+e^{z_i} \right) = - z_i - \log \left( 1+e^{-z_i} \right) $$  
 
+The loss function can be fomulated as,  
+$$ \ell_i = - \left( z_i (y_i - (z_i \geq 0)) - \log \left( 1 + e^{z_i - 2z_i(z_i \geq 0)} \right) \right) $$
 
 #### Reference:
 * [Wiki: Cross_entropy](https://en.wikipedia.org/wiki/Cross_entropy)
