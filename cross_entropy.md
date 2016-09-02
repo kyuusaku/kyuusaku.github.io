@@ -90,20 +90,20 @@ $$
 
 ### Sigmoid Cross Entropy Loss
 
-In this case, $$o_i=\frac{1}{1+e^{-z}}$$, and sigmoid cross entropy loss will compute the losses for both the positive samples ($$y_i=1$$) and negative samples ($$y_i=0$$).
+In this case, $$o_i=\frac{1}{1+e^{-z_i}}$$, and sigmoid cross entropy loss will compute the losses for both the positive samples ($$y_i=1$$) and negative samples ($$y_i=0$$).
 The loss, 
 $$
  \ell_{i} = 
    \begin{cases}
-     \log \left( \frac{1}{1+e^{-z}} \right) & \quad \text{if } y_i = 1 \\
-     \log \left( 1 - \frac{1}{1+e^{-z}} \right) = \log \left( \frac{e^{-z}}{1+e^{-z}} \right) = \log \left( \frac{1}{1+e^{z}} \right) & \quad \text{if } y_i = 0 \\
+     - \log \left( \frac{1}{1+e^{-z_i}} \right) = - \left( \log 1 - \log \left( 1+e^{-z_i} \right) \right) = - \left( - \log \left( 1+e^{-z_i} \right) \right) & \quad \text{if } y_i = 1 \\
+     - \log \left( 1 - \frac{1}{1+e^{-z_i}} \right) = \log \left( \frac{e^{-z_i}}{1+e^{-z_i}} \right) = \log \left( \frac{1}{1+e^{z_i}} \right) = - \left( \log 1 - \log \left( 1+e^{z_i} \right) \right) = - \left( - \log \left( 1+e^{z_i} \right) \right) & \quad \text{if } y_i = 0 \\
    \end{cases}
 $$  
 
 
 
 #### Reference:
-* [Wiki](https://en.wikipedia.org/wiki/Cross_entropy)
+* [Wiki: Cross_entropy](https://en.wikipedia.org/wiki/Cross_entropy)
 * [Softmax vs. Softmax-Loss: Numerical Stability](http://freemind.pluskid.org/machine-learning/softmax-vs-softmax-loss-numerical-stability/)
 
 ![log_x](/fig/log_x.png)
