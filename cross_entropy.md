@@ -96,7 +96,7 @@ $$
  \ell_{i} = 
    \begin{cases}
      - \log \left( \frac{1}{1+e^{-z_i}} \right) = - \left( \log 1 - \log \left( 1+e^{-z_i} \right) \right) = - \left( - \log \left( 1+e^{-z_i} \right) \right) & \quad \text{if } y_i = 1 \\
-     - \log \left( 1 - \frac{1}{1+e^{-z_i}} \right) = \log \left( \frac{e^{-z_i}}{1+e^{-z_i}} \right) = \log \left( \frac{1}{1+e^{z_i}} \right) = - \left( \log 1 - \log \left( 1+e^{z_i} \right) \right) = - \left( - \log \left( 1+e^{z_i} \right) \right) & \quad \text{if } y_i = 0 \\
+     - \log \left( 1 - \frac{1}{1+e^{-z_i}} \right) = \log \left( \frac{e^{-z_i}}{1+e^{-z_i}} \right) = \log \left( \frac{1}{1+e^{z_i}} \right) = - \left( - \log \left( 1+e^{z_i} \right) \right) & \quad \text{if } y_i = 0 \\
    \end{cases}
 $$  
 
