@@ -9,8 +9,10 @@ it typically performs poorly on held-out test data. At such time, you may try dr
 
 
 #### What is *Dropout* ?
-Randomly drop units (along with their connections) from the neural network during training.  
-Consider a neural network with $$L$$ hidden layers. Let $$ l \in {f_1, \dotsc, L} $$ index the hidden layers of the network. Let $$ z^{(l)} $$ denote the vector of inputs into layer $$l$$, $$y^{(l)}$$ denote the vector of outputs from layer $$l$$ ($$y^{(0)} = x $$ is the input). $$W^{(l)}$$ and $$b^{(l)}$$ are the weights and biases at layer $$l$$. With dropout, the feed-forward operation can be described as  
+
+> Randomly drop units (along with their connections) from the neural network during training.  
+
+Consider a neural network with $$L$$ hidden layers. Let $$ l \in \{f_1, \dotsc, L\} $$ index the hidden layers of the network. Let $$ z^{(l)} $$ denote the vector of inputs into layer $$l$$, $$y^{(l)}$$ denote the vector of outputs from layer $$l$$ ($$y^{(0)} = x $$ is the input). $$W^{(l)}$$ and $$b^{(l)}$$ are the weights and biases at layer $$l$$. With dropout, the feed-forward operation can be described as  
 $$ r^{(l)}_j \sim Bernoulli(p); $$  
 $$ \tilde{y}^{(l)} = r^{(l)} * y^{(l)}; $$  
 $$ z^{(l+1)}_i = w^{(l+1)}_i \tilde{y}^l + b^{(l+1)}_i; $$  
