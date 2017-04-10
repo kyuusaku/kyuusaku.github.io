@@ -132,6 +132,8 @@ $$
 - \frac {y_i} {o_i} \left( o_i \left( 1 - o_i \right) \right)
 =
 - \left( y_i - o_i \right)
+=
+- \left( o_i - y_i \right)
 $$
 
 **sample code in Caffe (Backward)**
