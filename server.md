@@ -89,6 +89,12 @@ permalink: /server/
 
     > Settings Manager >> Appearance >> Icons >> Tango
 
+* Install `Terminal`
+
+    > sudo apt-get install xfce4-terminal
+
+    [Tab not working when using terminal](https://www.starnet.com/xwin32kb/tab-key-not-working-when-using-xfce-desktop/)
+
 * Install `git`  
 
     > sudo apt-get install git  
@@ -109,6 +115,13 @@ permalink: /server/
 
     > /etc/init.d/xrdp start
 
+    or 
+
+    > sudo apt-get install xrdp
+
+* Install `Filezilla`  
+
+    > sudo apt-get install filezilla  
 
 * Install `Gpu Driver`
 
@@ -119,7 +132,10 @@ permalink: /server/
      -   PATH includes /usr/local/cuda-7.5/bin
      -   LD_LIBRARY_PATH includes /usr/local/cuda-7.5/lib64, or, add /usr/local/cuda-7.5/lib64 to /etc/ld.so.conf and run ldconfig as root
 
-    > 
+    install cuda by *.deb
+    > sudo dpkg -i *.deb  
+    > sudo apt-get update  
+    > sudo apt-get install cuda  
 
 * Install [Sublime Text](http://www.sublimetext.com/)
 
@@ -159,17 +175,13 @@ permalink: /server/
 
     > sudo apt-get install chromium-browser
 
-* Install `Terminal`
 
-    > sudo apt-get install xfce4-terminal
 
 * Chinese Support  
 
     > cp -r wqy /usr/share/fonts/truetype/wqy
 
-* Install `Filezilla`  
 
-    > sudo apt-get install filezilla  
 
 * Image Viewers  
 

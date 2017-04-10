@@ -18,12 +18,20 @@ A web-based tool for visualizing neural network architectures (or technically, a
 
 * **Torch** 
 [index](http://torch.ch/)
+[github](https://github.com/torch/distro)
 
 * **Matconvnet** 
 [index](http://www.vlfeat.org/matconvnet/)
 
 * **TensorFlow** 
 [index](https://www.tensorflow.org/)
+
+* **R**
+[ggplot2-onlinedocs](http://docs.ggplot2.org/current/) 
+[ggplot2-cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf) 
+[how to install](https://www.r-bloggers.com/how-to-install-r-on-linux-ubuntu-16-04-xenial-xerus/)
+
+
 
 
 
@@ -38,6 +46,7 @@ A web-based tool for visualizing neural network architectures (or technically, a
 
 
 ### Tutorials
+* [Deep Learning SIMPLIFED (YouTube)](https://www.youtube.com/watch?list=PLjJh1vlSEYgvGod9wWiydumYl8hOXixNu&v=b99UVkWzYTQ)
 * [UFLDL Tutorial](http://ufldl.stanford.edu/tutorial/)
 * [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/) [Schedule & Syllabus](http://cs231n.stanford.edu/syllabus.html)
 
