@@ -35,10 +35,10 @@ $$
 = 
 \left( -\sum_{i} y_i \log \left( o_i \right) \right)^{\prime} 
 =
-- \frac {y_i} {o_i}
+-\frac {y_i} {o_i}
 $$  
 
-Note that the denominator of the derivative is the output $$o_i$$, which may cause the overflow problem when $$o_i$$ approaches $$0$$. Two tricks can be used to solve this problem. One is setting a numerical lower bound.  
+**Note** that the denominator of the derivative is the output $$o_i$$, which may cause the overflow problem when $$o_i$$ approaches $$0$$. Two tricks can be used to solve this problem. One is setting a numerical lower bound.  
 
 **sample code in Caffe**
 
@@ -65,9 +65,9 @@ $$
 =
 \frac {\partial \ell} {\partial o_i} \frac {\partial o_i} {\partial z_{j}}
 =
-- \frac {y_i} {o_i} \left( o_j \left( \delta_{ij} - o_i \right) \right)
+-\frac {y_i} {o_i} \left( o_j \left( \delta_{ij} - o_i \right) \right)
 =
-- \frac {y_i o_j \delta_{ij}} {o_i} + y_i o_j
+-\frac {y_i o_j \delta_{ij}} {o_i} + y_i o_j
 =
 y_i \left( o_j - \delta_{ij} \right)
 $$  
@@ -129,11 +129,11 @@ $$
 =
 \frac {\partial \ell} {\partial o_i} \frac {\partial o_i} {\partial z_{i}}
 =
-- \frac {y_i} {o_i} \left( o_i \left( 1 - o_i \right) \right)
+-\frac {y_i} {o_i} \left( o_i \left( 1 - o_i \right) \right)
 =
-- \left( y_i - o_i \right)
+-\left( y_i - o_i \right)
 =
-- \left( o_i - y_i \right)
+-\left( o_i - y_i \right)
 $$
 
 **sample code in Caffe (Backward)**
