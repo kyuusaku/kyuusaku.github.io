@@ -11,37 +11,35 @@ CNNs are conducted on many basic fucntional blocks and adjusted by learning stra
 
 ## Basic blocks
 ------
-**convolutions**
-* [deconvnet](/deconvnet/)
-* [atrous convolution]()
+* **Convolutions**
+	* [deconvnet](/deconvnet/)
+	* [atrous convolution]()
 
-**pooling**
-* [weighted sum](/weighted_sum/)
-
-
-**activations**
-* [ReLU](/relu/)
+* **Pooling**
+	* [weighted sum](/weighted_sum/)
 
 
-**losses** 
-* [softmax](/softmax/)
-* [cross entropy loss (log loss)](/cross_entropy/)
-* [triplet loss]() *Coming soon!*
-* [contrastive loss]() *Coming soon!*
+* **Activations**
+	* [ReLU](/relu/)
+
+
+* **Losses** 
+	* [softmax](/softmax/)
+	* [cross entropy loss (log loss)](/cross_entropy/)
+	* [triplet loss]() *Coming soon!*
+	* [contrastive loss]() *Coming soon!*
 
 
 ## Architectures
 -------
 
-**general**
+* **General**
+	* [Inceptions]() by Google
+	* [ResNet]() by Kaiming He
 
-* [Inceptions]() by Google
-* [ResNet]() by Kaiming He
-
-**compression**
-
-* [ShuffleNet](/shuffle_net/) by Face++
-* [MobileNet]() by Google
+* **Compression**
+	* [ShuffleNet](/shuffle_net/) by Face++
+	* [MobileNet]() by Google
 
 
 **segmentation**

@@ -36,7 +36,7 @@ $$
 =
 \frac { 0 - e^{z_{j}}e^{z_{i}} } { \left(\sum_{k=1}^{K}e^{z_{k}}\right)^2 }
 =
-- \sigma(\mathbf{z})_{j} \sigma(\mathbf{z})_{i}
+-\sigma(\mathbf{z})_{j} \sigma(\mathbf{z})_{i}
 =
 \sigma(\mathbf{z})_{j} (0 - \sigma(\mathbf{z})_{i})
 $$
@@ -47,7 +47,7 @@ $$
 ### Implementation in Caffe (Details)
 
 **Forward**  
-In this code, $$dim=channels*inner\_num$$. (*I am not clear why subtract the max? Avoiding large values?*) If $$bottom\_data$$ is a $$N*C*H*W$$ matrix and $$softmax\_axis\_=2$$, $$top\_data$$ is a $$N*C*H*W$$ matrix, $$scale\_data$$ is a $$N*C*1*W$$ matrix, $$sum\_multiplier\_$$ is a $$H*1$$ identity vector.  
+In this code, $$dim=channels*inner\_num$$. (*I am not clear why subtract the max? Avoiding large values? Yes.*) If $$bottom\_data$$ is a $$N*C*H*W$$ matrix and $$softmax\_axis\_=2$$, $$top\_data$$ is a $$N*C*H*W$$ matrix, $$scale\_data$$ is a $$N*C*1*W$$ matrix, $$sum\_multiplier\_$$ is a $$H*1$$ identity vector.  
 
 * caffe_cpu_gemm<Dtype>(CblasNoTrans, CblasNoTrans, channels, inner_num_, 1, -1., sum_multiplier_.cpu_data(), scale_data, 1., top_data);  
 $$

@@ -31,9 +31,9 @@ My cv: [en]() [cn]().
 *Coming soon!*
 
 
-### Blogs & notes
+### My Blogs & notes
 -------------------
 
-* [CNN Cookbooks](/cnn_cookbooks/)
-* [Blog list]()
+* [CNN Cookbooks](/cnn_cookbooks/) *collected by myself*.
+* [Blog list]() *techniques & ideas*.
 
