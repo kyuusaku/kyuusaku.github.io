@@ -7,12 +7,13 @@ title: Suo Qiu (裘索)
 I am currently a PHD candidate with School of Electronic and Information Engineering, South China University of Technology, China. 
 My research interest mainly lies in:
 * *deep learning*
-* *machine learning* 
+* *machine learning*  
 and *the practical applications in real world*.
 
-* My email: q.suo@foxmail.com
-* My [dblp](http://dblp.dagstuhl.de/pers/hd/q/Qiu:Suo)
-* My cv: [en]() [cn]()
+
+My email: q.suo@foxmail.com. 
+My [dblp](http://dblp.dagstuhl.de/pers/hd/q/Qiu:Suo). 
+My cv: [en]() [cn]().
 
 
 
