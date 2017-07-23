@@ -8,7 +8,7 @@ permalink: /resnext/
 **Main idea:**
 
 <div align="center">
-<img src="http://othl3wan7.bkt.clouddn.com/resnext_mainidea.png" height="559" width="331" >
+<img src="http://othl3wan7.bkt.clouddn.com/resnext_mainidea.png" height="331" width="559" >
 </div>
 
 
