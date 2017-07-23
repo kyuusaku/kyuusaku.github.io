@@ -12,10 +12,14 @@ CNNs are conducted on many basic fucntional blocks and adjusted by learning stra
 ## Basic blocks
 ------
 * **Convolutions**
-	* [deconvnet](/deconvnet/)
 	* [atrous convolution]()
+	* [deconvnet](/deconvnet/)
+	* [group convolution]()
+	* [depthwise separable convolution]()
+
 
 * **Pooling**
+	* [global average pooling]()
 	* [weighted sum](/weighted_sum/)
 
 
@@ -33,16 +37,27 @@ CNNs are conducted on many basic fucntional blocks and adjusted by learning stra
 ## Architectures
 -------
 
-* **General**
-	* [Inceptions]() by Google
-	* [ResNet]() by Kaiming He
+* **General models for classification**
+	* [ResNet]() *by Kaiming He*	
+	* [ResNeXt]()
+	* [Inceptions]() *by Google*
+	* [Xception](/xception/) *by Google*
+	* [VGG]()	
+	* [AlexNet]()
 
-* **Compression**
-	* [ShuffleNet](/shuffle_net/) by Face++
-	* [MobileNet]() by Google
+* **Low computation cost design**
+	* [ShuffleNet](/shuffle_net/) *by Face++*
+	* [MobileNet](/mobile_net/) *by Google*
+	* [SqueezeNet]()
+
+* **Compression techniques**
+	* [Pruning network connections[6, 7] or channels]()
+	* [Quantization[28, 24, 36, 40] and factorization[20, 15, 17, 34]]()
+	* [FFT[23, 32] and other methods[2]]()
+	* [Distilling[11] transfer]()
 
 
-**segmentation**
+* **Segmentation**
 
 
 
