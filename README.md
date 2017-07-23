@@ -2,4 +2,4 @@
 
 Suo's pages
 
-GLU Licenses.
+GPL Licenses.
