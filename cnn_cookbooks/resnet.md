@@ -1,12 +1,12 @@
 ---
 layout: page
-title: ResNeXt
-permalink: /resnext/
+title: ResNet
+permalink: /resnet/
 ---
 
 ------
-**Main idea:**
-![resnext_mainidea](http://othl3wan7.bkt.clouddn.com/resnext_mainidea.png)
+
+homogeneous, multi-branch architecture
 
 #### Reference:
 * [Aggregated Residual Transformations for Deep Neural Networks](https://arxiv.org/abs/1611.05431)

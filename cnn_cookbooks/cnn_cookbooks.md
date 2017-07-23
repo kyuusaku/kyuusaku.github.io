@@ -12,10 +12,13 @@ CNNs are conducted on many basic fucntional blocks and adjusted by learning stra
 ## Basic blocks
 ------
 * **Convolutions**
+	* [convolution]()
 	* [atrous convolution]()
 	* [deconvnet](/deconvnet/)
 	* [group convolution]()
 	* [depthwise separable convolution]()
+	* [pointwise convolution]()
+	* [pointwise group convolution]()
 
 
 * **Pooling**
