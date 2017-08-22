@@ -13,7 +13,7 @@ permalink: /resnext/
 <img src="http://othl3wan7.bkt.clouddn.com/resnext_mainidea.png" height="331" width="559" >
 </div>
 
-A method to *increase the capacity* (#kernels) of CNNs and empirically outperforms the original ResNet module. This method provides an evidence that **grouped convolutions can improve accuracy** as well as may **reduce redundancy**. Authors also argue that it is imprecise to view this method as ensembling, because the members to be aggregated are trained jointly, not independently.
+A method to *increase the capacity* (#kernels) of CNNs and empirically outperforms the original ResNet module (1~2% point, small nets are better). This method provides an evidence that **grouped convolutions can improve accuracy** as well as may **reduce redundancy**. Authors also argue that it is imprecise to view this method as ensembling, because the members to be aggregated are trained jointly, not independently.
 
 **The complexity**
 
