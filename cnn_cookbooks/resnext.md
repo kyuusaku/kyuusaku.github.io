@@ -18,7 +18,8 @@ A method to *increase the capacity* (#kernels) of CNNs and empirically outperfor
 **The complexity**
 
 * #Params. 
-	* Original ResNet: $$ n_in \times n_mid + 9 $$
+	* Original ResNet: $$ d_{in} \times d_{mid} + 9d_{mid}^2 + d_{mid} \times d_{out} $$
+	* ResNeXt: $$ d_{in} \times 2d_{mid} + 32\times(\frac{d_{mid}}{32})^2 + 2d_{mid} \times d_{out} $$
 
 
 <div align="center">
