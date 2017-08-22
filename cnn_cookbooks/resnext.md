@@ -7,11 +7,18 @@ permalink: /resnext/
 * [code](https://github.com/facebookresearch/ResNeXt) (including *Torch*, *PyTorch*, *MXNet* and *Caffe*)
 
 ------
-**Main idea**
+**Main idea**  
 
 <div align="center">
 <img src="http://othl3wan7.bkt.clouddn.com/resnext_mainidea.png" height="331" width="559" >
 </div>
+
+and the real implementation  
+
+<div align="center">
+<img src="http://othl3wan7.bkt.clouddn.com/resnext_implement.png" height="196" width="140" >
+</div>
+
 
 A method to *increase the capacity* (#kernels) of CNNs and empirically outperforms the original ResNet module (1~2% point, small nets are better). This method provides an evidence that **grouped convolutions can improve accuracy** as well as may **reduce redundancy**. Authors also argue that it is imprecise to view this method as ensembling, because the members to be aggregated are trained jointly, not independently.
 
