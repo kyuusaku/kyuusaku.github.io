@@ -18,9 +18,13 @@ A method to *increase the capacity* (#kernels) of CNNs and empirically outperfor
 **The complexity**
 
 * #Params. 
-	* Original ResNet: $$ d_{in} \times d_{mid} + 9d_{mid}^2 + d_{mid} \times d_{out} $$
-	* ResNeXt: $$ d_{in} \times 2d_{mid} + 32\times(\frac{d_{mid}}{32})^2 + 2d_{mid} \times d_{out} $$
+	* Original ResNet: $$ d_{in} \times d_{mid} + 9d_{mid}^2 + d_{mid} \times d_{out} \approx 17d_{mid}^2$$
+	* ResNeXt: $$ d_{in} \times 2d_{mid} + 32\times9(\frac{d_{mid}}{32})^2 + 2d_{mid} \times d_{out}  \approx 16\frac{9}{32}d_{mid}^2$$
+the number of parameters have been reduced by the low dimensional embedding.
 
+* FLOPs
+	* Original ResNet: $$ F \times (d_{in} \times d_{mid} + 9d_{mid}^2 + d_{mid} \times d_{out}) $$
+	* ResNeXt: $$ 32F \times (d_{in} \times \frac{d_{mid}}{32} + 9(\frac{d_{mid}}{32})^2 + \frac{d_{mid}}{32} \times d_{out}) $$
 
 <div align="center">
 <img src="http://othl3wan7.bkt.clouddn.com/resnext_network.png" height="696" width="546" >
