@@ -41,7 +41,7 @@ CNNs are conducted on many basic fucntional blocks and adjusted by learning stra
 -------
 
 * **General models for classification**
-    * [DenseNet]()
+    * [DenseNet](/densenet/)
 	* [ResNet]() *by Kaiming He*	
 	* [ResNeXt](/resnext/)
 	* [Inceptions]() *by Google*
