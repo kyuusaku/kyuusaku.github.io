@@ -25,7 +25,7 @@ Before DenseNet, there exit two popular types of network architectures. One is i
 **Main idea**  
 
 <div align="center">
-<img src="http://othl3wan7.bkt.clouddn.com/densenet.png" height="226" width="1153">
+<img src="http://othl3wan7.bkt.clouddn.com/densenet.png" height="136" width="692">
 </div>
 
 
