@@ -37,6 +37,16 @@ CNNs are conducted on many basic fucntional blocks and adjusted by learning stra
 	* [contrastive loss]() *Coming soon!*
 
 
+## Learning strategies
+-------
+
+* **Regularization**
+	* [dropout](/dropout/)
+
+* **Optimization**
+
+
+
 ## Architectures
 -------
 
@@ -66,9 +76,7 @@ CNNs are conducted on many basic fucntional blocks and adjusted by learning stra
 
 
 
-## Learning strategies
--------
-* [dropout](/dropout/)
+
 
 
 http://sebastianruder.com/optimizing-gradient-descent/
